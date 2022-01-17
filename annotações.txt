@@ -1,0 +1,480 @@
+WEB
+
+-> servidor web: é um software que fica instalado em um computador na rede e serve para receber as requisições
+de um browser e responder com os arquivos correspondentes ao site solicitado(que em geral são páginas criadas com Html,
+Css e Javascript e alguns recursos como imagens, áudios e vídeos).
+
+-> Protocolo Http (Hypertext Transfer Protocol), é uma espécie de idioma utilizado para que o cliente Web
+(que em geral é um browser) e o servidor Web se entendam. Cada um dos outros tipos de servidores
+web utiliza um protocolo diferente.
+
+	- outros protocolos:
+		- SMTP: recebimento e envio de emails
+		- FTP: recebimento e download de arquivos
+		
+-> Servidores Web relacionados aos sites
+	- Apache
+	- Nginx
+	
+-> Endereço IP
+	- Um endereço de Protocolo da Internet (Internet Protocol address(IP Address), é um rótulo numérico atribuído a cada
+	dispositivo (computador, impressora, smartphone e etc) conectado a uma rede de computadores que utiliza o Protocolo de Internet
+	para comunicação.
+	
+	- Um endereço IP serve a duas funções principais:
+		- identificação de interface de hospedeiro ou de rede e 
+		endereçamento de localização.
+		
+		
+-> DNS
+	- O Sistema de Nomes de Domínio (Domain Name System), é um sistemas hierárquico e distribuído de gestão
+	de nomes para computadores, serviços ou qualquer máquina conectada à internet ou a uma rede privada.
+	Faz a associação entre várias informações atribuídas a nomes e domínios e cada entidade participante.
+	- A sua utilização mais convencional associa nomes de domínios mais facilmente memorizáveis a endereços 
+	IP numéricos, necessários à localização e identificação de serviços e dispositivos, processo
+	esse denominado por: resolução de nome.
+	
+-> Devolvendo o site
+	- Após descobrir o IP correto do servidor na rede, o browser vai então solicitar a árvore de arquivos relacionadas
+	a aquele site digitador ao servidor web.
+	
+	- site estático: 
+		- devolverá os arquivos pré-existentes
+		
+	- site dinâmico:
+		- o servidor solicitará para um ou outro software (por exemplo, ao Nodejs) a geração dessas páginas
+		dinâmicas.
+		
+		
+Frontend | Backend | Fullstack
+
+-> Frontend: O desenvolvedor front-end é o que cria a interface do site com o usuário, geralmente usando HTML, CSS e Javascript.
+
+-> Backend: Em geral o desenvolvedor Backend é o responsável por desenvolver a estrutura do site que não é apresentada ao 
+usuário, por exemplo a parte que acessa o banco de dados, processa as regras de negócio e itnerage com outros serviços.
+	É comum no Backend utilizarmos linguagens de programação commo Javascript, Ruby e Python e frameworks como NodeJs, Ruby
+On Rails e Django.
+
+-> Fullstack: O desenvolvedor fullstack é o que consegue desenvolver tanto o frontend como o backend, portanto ele pode
+atuar no ciclo completo de desenvolvimento de um site.
+
+
+
+HTML \ HTML 5
+
+Objetivos: 
+	- Compreender o que é e como funciona o HTML
+	- Aprender a usar os principais elementos do HTML
+	- Compreender o funcionamento dos Forms
+	- Conhecer as novidades do HTML 5
+	- Aprender a organizar os códigos
+	- Criar um site do zero baseado em um mockup
+
+
+	HTML -> linguagem de marcação de Hipertexto utilizada para a criação de páginas Web.
+	
+	O que é Hipertexto?
+	 - Hipertextos se referem aos links nas páginas que podem conectar a outros documentos
+	 no mesmo site ou em outro site, os links são um aspecto fundamental da Web, é o que conecta tudo.
+	 
+	 
+Como surgiu o HTML?
+	- A linguagem foi criada entre 1989 e 1990 para o compartilhamento de pesquisa cientificas entre
+	Tim Berners-Lee(físico inglês e autor da linguagem) e seus colegas de trabalho.
+	- Se popularizou junto com o ínicio da internet.
+	
+	
+	
+Tags no Html
+
+	<p> Hello World </p>
+
+
+Tags básicas do HTML
+
+<h1>  </h1> ao <h6>  </h6> -> estilos/tamanhos de títulos
+
+<p>  </p> -> parágrafo
+
+<hr> -> aplica uma linha transversal(separação) em nosso html
+
+<strong>  </strong> -> tag de formatação inline, aonde daremos destaque a uma palavra ou frase  
+para esta opção também existe a tag <b></b>, mas o strong é mais semântico
+
+<s></s> -> tag que aplica um risco na palavra, ou seja, como se fosse um efeito de cancelamento ou 
+de inatividade para aquela palavra/ação
+
+
+para maior conhecimento sobre as demais tags, 
+podemos acessar -> https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element
+
+
+
+=> Listas no HTML
+
+    -> tipos de listas
+        - listas ordenadas
+        - listas não ordenadas
+
+
+=> Forms
+	São campos que recebemm as entradas dos usuários
+
+	=> validações: Uma maneira de garantir que os dados inseridos estão
+	seguindo a norma para aquele campo
+
+		=> dentro do forms, temos a validação required, onde 'força' o user 
+		a preencher o campo, pois, o mesmo não pode ficar em branco
+
+		=> Se colocarmos o type="email", o padrão exigido será do formato
+		de e-mail: name@email.com 
+
+		=> se colocar o type="number", podemos usar a propriedade min e max, limitando
+		o campo de pesquisa..
+
+
+O que é o HTML5?
+	-> é a última versão lançada do HTML, com melhorias e alguns pontos novos
+
+	-> diferenças(HTML vs HTML 5):
+		- Semântica melhor para as Tags
+		- Tags para incluir audio e vídeo 
+		- Tags melhores para separar as partes do site (header, section,
+		aside, footer...)
+		- Melhor tratamento para gráficos
+		- Novos tipos de input
+
+
+	-> Tag de vídeo:
+
+		<video width="320" height="240" controls>
+			<source src="movie.mp4" type="video/mp4">
+			<source src="movie.ogg" type="video/ogg">
+			Your browser does not support the video tag.
+		</video>
+	
+
+	-> Tag de audio:
+
+		<audio controls>
+			<source src="horse.mp3" type="audio/mp4">
+			<source src="horse.ogg" type="audio/ogg">
+			Your browser does not support the audio Element.
+		</audio>
+
+
+	-> Input URL
+
+		<input type="url">
+
+		- colocando uma url como praste, caso não esteja no formato correto,
+		o submit não vai ser permitido
+
+
+	-> Input Range
+
+		<input type="range" min="1" max="10">
+
+		ex. de uso: controle de volume
+
+
+	-> Input time
+
+		<input type="time">
+
+	
+	-> input search
+
+		<input type="search" list="weapons" >
+			<datalist id="weapons" style="display:hidden;">
+				<option value="sword">
+				<option value="axe">
+				<option value="wade">
+			</datalist>
+
+		
+		datalist -> usado bastante para pré-seleção, bastante comum tambem em 
+		auto-complete
+
+
+	-> New HTML5 Form Input Types
+
+		https://www.webfx.com/blog/images/assets/cdn.sixrevisions.com/demos/0345-new_html5_form_input_types/new-html5-form-input-types.html
+
+
+	-> Semântica
+		- é o estudo do significado das palavras e frases em um idioma
+
+		-> elementos semânticos: são elementos com um determinado significado
+		-> no Html5 tentaram trzer tags, que ao ler, já é possível identificar
+		o que determinada tag estará representando..
+
+Objetivos do módulo CSS:
+	-> Entender o que é CSS e porque ele é importante
+	-> Aprender a usar cores e incluir backgrounds
+	-> Dominar o uso dos seletores
+	-> Aprender o básico sobre Especificidade e herança no CSS
+	-> Aprender como incluir fontes
+	-> Dominar o posicionamento dos elementos
+
+CSS -> o que é?
+	-> Cascade Style Sheets(Folha de estilo em cascatas)
+	-> Linguagem que define o estilo de um documento HTML
+	-> Não deve ser definida dentro de um documento HTML
+
+Como funciona uma regra CSS:
+	- O seletor aponta para o elemento HTML a ser estilizado
+	- O Bloco de declaração(entre chaves) contém uma ou mais declarações
+	- Cada declaração é composta por duas informações separadas por 
+	dois pontos:
+		- propriedade
+		- valor
+
+
+-> Cores no CSS
+	- Browsers modernos suportam 140 nomes de cores diferentes
+
+	- Cores podem ser Especificadas pelas seguintes formas
+		- Nomes
+		- Valores RGB
+		- Valores Hexadecimais -> considerado atualmente como mais utilizado
+		- Valores HSL (CSS3)
+		- Valores HWB (CSS4)
+
+	==> Definir as cores por nome não é uma boa opção <==
+
+	==> Forma mais utilizada: Hexadecimal
+		- Hexadecimal é um sistema númerico que consiste em 16 símbolos diferentes:
+		[0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F]
+
+		- Veja o valor de cada símbolo hexadecimal  no sistema binário e decimal
+			Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F
+			Binário: 0000 0001 0010 0011 0100 1010 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111
+			Decimal: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+
+		
+	==> Cor hexadecimal é definida por um conjunto de 06 símbolos:
+
+		#RRGGBB
+			onde: 
+				RR => vermelho ou red
+				GG => verdade ou green
+				BB => azul ou blue
+
+
+			Exemplo de uma cor escrita em hexadecimal:
+				#FF0000 -> Vermelho
+
+=> Background e Borders
+
+	==> background
+		- É uma propriedade CSS utilizada para definir efeitos de background de 
+		um elemento (o que vai ser exibido ao fundo do elemento)
+
+		=> Background-color
+			- é uma propriedade utilizada para definir a cor de fundo de um elemento
+
+		=> Background-image
+			- é uma propriedade que especifica uma imagem como fundo de um elemento 
+
+	==> Borders
+		- é uma propriedade do CSS utilizada para definir o estilo, largura e cor da borda
+		de um elemento.
+
+	
+==> Seletores
+
+	- os seletores vem para auxiliar no css, para estilizar algumas partes em especifico, 
+	ao qual desejmos alterar, sem precisar alterar nosso html inteiro...
+	- Isso pode ser feito através das classes, dos ids...
+		exemplo de uso do id
+
+			HTML
+
+			<ul>
+				<li id="europa-text">Europa</li>
+			</ul>
+
+
+			CSS
+
+			#europa-text(
+				font-size: 10px;
+				color: blue;
+			)
+
+===> inspetor do Chrome
+
+
+===> Seletores mais avançados
+
+	- seletores por decendência: não precisa necessariamente ter uma ligação com o elemento paterno 
+		li a {
+			color: blue;
+		}
+
+	- seletor filho: tem que ter uma ligação direta com o elemento pai
+		li > a {
+			color: blue
+		}
+
+	- seletor adjacente: é quando queremos por exemplo aplicar estilização em um elemento que venha
+	sempre posteriormente a outro elemento, como podemos ver a seguir:
+
+		aqui sempre que tiver um h3, logo depois de um h1, ele recebrá a estilização
+		h1 + h3 {
+			color: red;
+			font-size: 22px;
+		}
+
+	- seletor de atributo: é quando 'pegamos' por exemplo nosso anchor que tem como atributo, 
+	o href='/recibo' e fazer ele receber uma estilização, da seguinte forma:
+
+		a[href='/recibo'] {
+			font-size: 22px;
+			color: orange;
+		}
+
+	- pseudo-classes: palavra-chave adicionada a seletores que especifica um estado especial
+	do elemento selecionado. permitem que você aplique um estilo a um elemento não apenas 
+	em relação ao conteúdo da árvore do documento, mas também em relação a fatores externos 
+	como o histórico de navegação (:visited, por exemplo), o status do seu conteúdo 
+	(como :checked em certos elementos de um formulário), ou a posição do mouse 
+	(como :hover, que permite saber se o mouse está sobre um elemento ou não).
+
+	exemplo: 
+
+	li:nth-of-type(2) {
+		color: purple;
+	}
+
+	https://code.tutsplus.com/pt/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+	https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Selectors
+
+
+===> CSS -> Especificidade
+
+	- A Especificidade determina quais regras CSS serão aplicadas
+
+
+===> Herança CSS
+
+	- os estilos em si, são passados por herança
+
+	div {
+		color: blue;
+	}
+
+	todos os elementos dentro da div, irão herdar essa estilização, 
+	pois, todos são filhos do elemento div
+
+	-> comando inherit, ou seja, herdar
+		div {
+			border: 2px solid;
+		}
+
+		div ul {
+			border: inherit;
+		}
+		
+		todos os elementos dentro da ul, irão herdar a estilização, 
+		presente na div acima
+
+
+
+===> Textos e fontes
+
+	- Precisa ser pontuado que hoje existem no mundo html e do css, familias e 
+	estilos de fontes
+
+	- Exemplo:
+		CSS
+
+		p {
+			font-family: Arial, Helvetica, sans-serif
+		}
+
+	- Existem duas formas de aplciar o negrito nas palavras ou textos que estamos
+	construindo... a primeira seria através do strong e a segunda através do weight da
+	font, que varia de acordo com a intensidade, ou seja, se colocarmos, por exemplo, 
+	font-weight: bold, o texto ficará inteiro em negrito.... essa propriedade,
+	pode ser aplicada através de valores também.. como 600, 500...
+
+	- espaçamento entre linhas => line-height
+
+		exemplo:
+
+		/* gerando um espaçamento de 1.3  entre as linhas */
+		p{
+			line-height: 1.3;
+		}
+
+	- Alinhamento do texto
+
+		exemplo: 
+		
+		h1 {
+			text-align: center | right | left
+		}
+
+	- Decorando o texto
+
+		/* apresentara um underline embaixo de todo h1 */
+		h1 {
+			text-decoration: underline
+		}
+
+===> Google fonts
+
+	- pode ser acessado via https://fonts.google.com/
+	- através deste link podemos escolher e aplicar as fonts através da api do google
+
+	Exemplo:
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geostar&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	
+
+===> Box Model
+
+	- O HTML trata todos os elementos (textos, imagens e etc..) como uma Box Model
+
+	Entendendo as partes do Box Model
+		- Content: O conteúdo da caixa onde aparecem textos ou imagens.
+		- Padding: Espaçamento ao redor de um conteúdo(seu preenchimento é transparente).
+			- Top: Espaço entre o conteúdo e a parte de cima da borda 
+			- Bottom: Espaço entre o conteúdo e a parte de baixo da borda
+			- left: Espaço entre o conteúdo e a parte da esquerda da borda
+			- right: Espaço entre o conteúdo e a parte da direita da borda
+		- Border: Uma borda que fica entre a margin e o padding.
+		- Margin: Limpa uuma área da border(a margem é transparente).
+
+===> Bulma (framework CSS)
+
+	> Objetivos do módulo:
+		- Entender o que é o Bulma e porque utilizá-lo
+		- Aprender como inserir ele no seu projeto 
+		- Aprender como usar os components do Bulma
+		- Aprender como usar a navbar e o footer
+		- COmpreender o que é respónsividade e aprender a aplicá-la com o Bulma
+
+
+
+	> O que é Bulma?
+
+		- framework CSS, com classes pré-prontas para utilização em nossos códigos
+		- https://bulma.io
+		- Responsivo
+
+
+		-> components: 
+			- https://bulma.io -> documentation -> components
+
+		-> Barra de navegação e footer
+
+			
+
+
+	 

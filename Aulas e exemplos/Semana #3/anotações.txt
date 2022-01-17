@@ -1,0 +1,305 @@
+JavaScript + Lógica de Programação
+
+    => Neste módulo vamos aprender a base da Programação: 
+        - a Lógica(com JavaScript)
+
+            -> 1 - Primeiros passos
+            -> 2 - Condicionais
+            -> 3 - Loops
+            -> 4 - Funções
+            -> 5 - Arrays
+            -> 6 - Objetos
+            -> 7 - Classes - POO
+            -> 8 - Manipulando o DOM
+            -> 9 - Eventos
+
+
+        => Tipos primitivos
+
+            - Os tipos primitivos são a base de um código
+            - Utilizamos para representar algum dado "bruto"
+            - Com estes tipos que somos capazes de cosntruir
+            estrutura mais complexas
+
+            eles são: 
+                - Number => numerais inteiros, doubles, dizimas...
+                - String => uso de aspas duplas, simples..
+                - Boolean => duas representações: True and False, porém, 
+                existe a representação null, que não é a mesma coisa que 0
+                          => Temos tambem a opção undefined, que é usado 
+                          quando não ha possibilidade de retornar um resultado 
+                          definido ou existente.
+
+
+        => Operações Básicas:
+            - Number:
+                - Adição => +
+                - Subtração => -
+                - Multiplicação => *
+                - Divisão => /
+                - Modúlo => %, ao qual é retornado o resto da divisão
+
+            - String:
+                - Concatenação: Somar/juntar duas ou mais strings
+                - extraindo um caractere específico de uma string, é
+                feito da seguinte forma: String[posição-1], onde passamos entre 
+                colchetes a posição que buscamos dentro da string, menos 1, 
+                pois o índice sempre começa de 0
+                - Para saber o tamanho de uma string, podemos utilizar a propriedade
+                length, da seguinte forma: "String".length
+
+            - Ordem de precedência:
+                - na matemática segue a ordem das operações..
+                - na programação, segue a definição dos parêntesis
+
+        => Recursos nativos do Browser
+
+            - uso do console:
+                - console.log() => imprime mensagem em tela
+                - console.info() => no console do navegador, é retornado o texto(string),
+                com tonalidade azulada
+                - console.warn() => imprime mensagens de urgência(tom amarelado)
+                - console.error() => imprime mensagens de erro(tom avermelhado)
+
+            
+            - Alert()
+                - Utilizado para imprimir/mostrar mensagens em tela, através de uma caixa
+                de mensagem
+
+            - Confirm()
+                - Utilizado para mostrar também através de uma caixa de mensagem, algum texto, 
+                porém, com buttons de cancel e ok
+
+            - Prompt()
+                - como exemplo, se colocasse um texto perguntando alguma informação, 
+                o Browser iria interpretar a mensagem, imprimir e fazer aparecer na caixa de mensagem
+                e logo em seguida, colocaria um input, para que a resposta seja inserida.
+
+
+        => Declarando variáveis
+            - let: o let permite de alguma forma você criar a variável, popular a mesma e 
+            logo em sequência, atribuir novo(s) valor(es) para a mesma, como se estivesse,
+            sobrescrevendo a variável
+            - const: Tem um comportamento parecido com o do let, porém, const, vem da palavra 
+            'constant' do inglês, que significa constante e desta forma, a mesma so pode
+            receber um/o valor uma única vez e não pode ser alterado ou sobrescrito como o let.
+            - var: O var ele tem comportamento semelhante ao let, porém, ele vem de herança
+            de versões anteriores do JS, mas, ele tem motivos bem importantes pra existir
+
+        => Comentários:
+            - Textos, escritas ao qual o interpretador vai ignorar.
+            - Comentário de uma única linha, colocado no ínicio do texto => //
+            - Comentário de várias linhas, é feito da seguinte forma => /* (aqui vem o texto que desejarmos e também a 
+            quantidade de linhas desejadas) */
+
+
+        => Javascript fora do console (mapeamento arquivo externo)
+            - Pode ser realizado de duas formas:
+                => colocando uma tag script no header do arquivo html e dentro 
+                do src, colocar o caminho do arquivo JS
+                => Colocando o código JS dentro da tag script no header do arquivo
+                html
+
+
+        => Comparações de Dados
+            - Sinal ==, para realizar a ação de comparação de igualdade, porém, como javascript 
+            tem uma tipagem fraca, desta forma o == ignora a tpagem da variável
+            - Sinal ===, tem um comportamento parecido com o de cima, porém, leva em consideração, 
+            a questão da tipagem.
+            - sinal !=, irá realizar a verificação se determinada variável ou situação é diferente 
+            do valor em si, que foi usado na comparação.
+            - sinal !==, tem comportamento parecido com o sinal anterior, porém, levará em consideração
+            a tipagem da variável.
+            - sinal >, significa a comparação se um determinado valor ou variável, contém um valor 
+            maior que outro designado na comparação. É possivel realizar essa comparação 
+            com string, aonde o sinal de >, vai avaliar se a string vem depois da que esta sendo 
+            passada para a comparação.
+            - sinal >=, representa a comparação, onde estará avaliando se tal valor é maior ou igual
+            ao que esta sendo comparado.
+            - sinal <, significa a comparação se um determinado valor ou variável, contém um valor 
+            menor que outro designado na comparação. É possivel realizar essa comparação 
+            com string, aonde o sinal de <, vai avaliar se a string vem antes da que esta sendo 
+            passada para a comparação.
+            - sinal <=, representa a comparação, onde estará avaliando se tal valor é menor ou igual
+            ao que esta sendo comparado.
+
+        => Operações lógicas
+            - Expressões construídas a partir de operações com valores booleanos.
+            - Também retornam um valor booleano
+            - Seguimos os resultados lógicos contidos na Tabela Verdade
+
+            => Tabela Verdade
+                - É como a tabuada
+                    - É uma tabela de resultados
+                    - A tabuada mostra o resultado das multiplicações de diversos números
+                    - Os valores booleanos tem a Tabela Verdade
+                    - Mostra o resultado de diversas operações lógicas
+
+                - Diferente da tabuada, os valores lógicos são apenas dois (true e false)
+                - As operações básicas que temos na programação hoje são 3:
+                    - E(AND) => &&
+                    - OU(OR)
+                    - NÃO(NOT)
+
+                - A Tabela Verdade é o resultado da combinação dos dois valores booleanos em 
+                todas as combinações possíveis.
+
+        => Expressões lógicas
+            - Numa expressão lógica, podemos ter um ou mais operadores lógicos
+            - Cada termo é um valor booleano ou operação que retorne booleano
+            - Exemplo 1:
+                10 > 4 ou 5<=5
+
+            Exemplo 2:
+                0 >= 0 ou 5 < 6 e 1 > 0
+
+
+        => Condicionais 
+            - Um dos motivos pelo qual tivemos que aprender operadores lógicos
+            - São blocos de códigos que são executados baseado no resultado de uma 
+            expressão lógica
+            - Também são chamados de Controle de Fluxo
+                - Podem direcionar a aplicação por um determinado fluxo com base no 
+                valor das expressões
+
+
+        => Miniapp com Boolean, Operadores e Condicionais
+            Biblioteca Moment: Biblioteca para trabalhar com datas no JS
+
+
+        => Conhecendo o Switch:
+            - Estrutura de Controle de fluxo
+            - Avalia uma expressão
+            - Procura a melhor cláusula(caso) que atende o resultado
+                - As cláusulas, ou casos, são chamados de "cases"
+
+            
+           - no Switch, depois que é encontrado o primeiro case, 
+           todos os seguintes serão executados, até que se encontre 
+           a palavra reservada "break"
+
+
+        => Estruturas de repetição
+
+            - Estruturas utilizadas para repetir um bloco de código.
+            - Pode ser um determinado número de vezes ou até que uma determinada condição
+            seja atendida.
+            - Nós veremos 3:
+                - While
+                - for
+                - Do-While
+
+            - While -> tem o seguinte formato:
+
+                while(expressão) {
+                    <bloco de código a ser executado>
+                }
+
+            - Loops com for
+                - O while recebe apenas uma expressão
+                - Com o for é possível adicionar a variável que 
+                utilizaremos para controlar as iterações
+                - O for segue o seguinte formato:
+                    for(<variável>; <expressão>; <ação de controle>) {
+                        <bloco de código>
+                    }
+
+        > Função
+            -> é um bloco de código para executar uma determinada ação
+            -> Esse bloco é Nomeado
+            -> Podemos chamar onde e quando quisermos
+            -> A declaração e a chamada de uma função segue esse modelo:
+                function algumaTarefa() {
+                    <bloco de código>
+                }
+
+                algumaTarefa()
+
+                
+        > Scope
+            -> Quando declaramos uma varíavel com Let, fora de qualquer estrutura, 
+            ela pode ser acessado de qualquer lugar da aplicação, ou seja, ela possui um
+            scope global
+            -> diferenças entre o uso do var e let dentro de um escopo de função
+                -> o var ao ser usado ele é elevado para um dos primeiros, senão, o primeiro
+                item da função a ser interpretado
+                -> já o let faz com que realmente a variável seja declarada no momento que o programa
+                "lê" o mesmo, que é aonde se difere do var
+
+        > Funções Anônimas
+            -> Elas tem o nome omitido no momento da criação, mas porque criar uma 
+            function Anônima, se não conseguiremos chamar, pois, ela não tem nome??
+                -> Isso, porque nos podemos armazenar funções anônimas em 
+                variáveis
+
+            -> As funções anônimas tem uma particularidade bem interessante..
+                -> funções anônimas, por serem armazenadas em variáveis, ela seguem 
+                a regra da chamada de uma variável, o que provocará um erro, 
+                dependendo da onde ou momento que a mesma for chamada, pois, 
+                desta forma a function sendo anônima, sempre precisará ser criada 
+                primeiro para depois inicializada ou ser chamada
+
+        > Arrow functions
+            -> arrow functions também são funções anônimas, ou seja, funções que não daremos nome
+
+
+        > High Order Functions
+            -> Significa funções de alta Classe
+            -> São funções que recebem ou retornam outras funções
+            -> As funções que uma High Order Function recebem, geralmente são anônimas
+                -> Podendo ser uma Arrow function ou não
+            -> A função que é enviada como parâmetro de uma HOF é uma chamada de callback
+
+        > Arrays
+            -> É uma estrutura de Dados
+                > é capaz de armazenar e organizar outros dados
+            -> Dados são organizados em forma de lista
+                > Cada valor fica numa determinada posição
+            -> Pode armazenar internamente qualquer outro tipo
+                > Number, String, Boolean e etc.
+                > E até outro array
+
+
+        > Funções básicas de Arrays
+            -> Função push() => função utilizada para adicionar um novo elemento no final de um array
+            -> Função pop() => Função utilizada para remover um elemento no final de um array
+            -> Função shift() => Função utilizada para remover o elemento na primeira posição do array
+            -> Função unshift() => Função utilizada para adicionar um novo elemento no começo do array e devolver o novo tamanho do array
+            -> length => retorna o tamanho do array
+            -> Função indexOf() => retorna a posição onde determinado elemento posicionado dentro do array se encontra
+
+        > Array Bidimensionais
+            -> Array que armazena outro array
+        
+        > Splice
+            -> Significa "emendar" ou "costurar"
+            -> Substitui o array original 
+            -> A sintaxe deste método é:
+                array.splice(index[,deleteCount[, elemento1[, ...[, elementoN]]]])
+
+                - Espera um primeiro parâmetro que é um índice do Array
+                - O segundo é a quantidade de elementos que queremos remover a partir deste índice
+                - Os proxímos são os elementos que queremos adicionar no lugar
+                - Apenas o primeiro parâmetro é "obrigatório"
+
+        > Slice
+            -> Significa "fatiar" ou "dividir"
+            -> Extrai uma parte do array sem alterar o array original
+            -> A sintaxe deste método é:
+                arr.slice([begin[, end]])
+
+                - possui um primeiro parâmetro que é o índice inicial
+                - O segundo parâmetro é o índice final
+                - Retorna todos os elementos entre o elemento de índice "begin" e o anterior ao elemento "end"
+
+        > Iteração em Arrays
+            -> As funções de iteralção que veremos são HOF
+                - Enviamos callbacks (funções que enviamos como parâmetro)
+            -> O Callback é chamado para cada elemento do Array
+            -> Segue o seguinte formato
+
+                array.FuncaoDeIterar(function(elementoAtual, indice, array) {
+                    <corpo da funcao>
+                })
+
+                - espera um callback que receba como parâmetro o elemento atual, o índice e o array completo

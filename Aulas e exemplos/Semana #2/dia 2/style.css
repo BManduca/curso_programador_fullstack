@@ -1,0 +1,13 @@
+li > a {
+    color: #10f1d3;
+    font-size: 22px;
+}
+
+li:nth-of-type(2) {
+    color: purple;
+}
+
+h1 + h3 {
+    border: 4px #10f1d3 solid;
+    border-radius: 3px;
+}

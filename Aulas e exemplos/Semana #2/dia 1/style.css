@@ -1,0 +1,26 @@
+h1{
+    font-size: 50px;
+    color: #4b0fd7;
+
+    border: 2px orange dotted;
+    border-radius: 3px;
+}
+
+h4 {
+    color: #66ffff;
+    font-size: 20px;
+}
+
+li {
+    color: #ff66ff;
+}
+
+#europa-text {
+    font-size: 22px;
+    color: #a7fa64;
+}
+
+.moon {
+    color: #58795d;
+    font-size: 30px;
+}
