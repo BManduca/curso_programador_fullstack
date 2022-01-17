@@ -37,8 +37,51 @@ let hitchedSpaceships = ["Deméter", "Darwin", "Supernova", "Fênix", "Puller"]
 //     return uppercase;
 // })
 
-let uppercaseShips = hitchedSpaceships.map(currentSpaceships => {
-    return currentSpaceships.toUpperCase();
+// let uppercaseShips = hitchedSpaceships.map(currentSpaceships => {
+//     return currentSpaceships.toUpperCase();
+// })
+
+// console.log(uppercaseShips);
+
+// console.log("Modo lowerCase\n\n");
+
+// hitchedSpaceships.map(function lowerArray(currentSpaceships, index) {
+//     console.log("Nave[" + index + "] ===> " + currentSpaceships + "\n");
+// })
+
+// console.log("\n\nModo upperCase\n\n");
+
+// hitchedSpaceships.map(function upperArray(currentSpaceships, index) {
+//     let upperCase = currentSpaceships.toUpperCase();
+//     console.log("Nave[" + index + "] ===> " + upperCase + "\n");
+// })
+
+
+/*
+    filter() => função para filtrar os elementos do array e essa função
+    aguarda um retorno booleano do callback, para saber se o elemento 
+    passou no filtro ou não.
+
+    se resposta == true, o elemento é inserido no array, 
+    caso contrário, não.
+*/
+
+// let with7Chars = hitchedSpaceships.filter(element => {
+//     return element.length >= 7;
+// })
+
+// console.log("Novo array: [" + with7Chars + "]");
+
+
+/*
+    find() => função bem parecida com a filter(), mas a diferença é que para a função
+    find(), so irá retornar o primeiro elemento que satisfazer a condição lógica repassada e também
+    o filter() retorna um novo array, já o find(), retorna somente o elemento em si
+*/
+
+let with7Chars = hitchedSpaceships.find(element => {
+    return element.length >= 7;
 })
 
-console.log(uppercaseShips);
+console.log(with7Chars);
+

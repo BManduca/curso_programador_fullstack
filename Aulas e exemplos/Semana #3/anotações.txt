@@ -303,3 +303,14 @@ JavaScript + Lógica de Programação
                 })
 
                 - espera um callback que receba como parâmetro o elemento atual, o índice e o array completo
+
+        > Introdução a Objetos
+            -> Assim como os arrays, também são estruturas de dados
+                - Capazes de armazenar e organizar outros dados
+            -> Dados são organizados através de propriedades
+            -> Associação chave-valor
+                - Ao invês de ser organizado por índice, ele é organizado por chave-valor
+                - Chave é o nome da propriedade
+                - Valor é o valor que esta propriedade vai receber
+            -> Também podem armazenar internamente qualquer outro tipo
+                - Inclusive Arrays e outros objetos
