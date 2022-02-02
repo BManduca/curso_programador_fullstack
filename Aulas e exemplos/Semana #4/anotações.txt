@@ -1,0 +1,58 @@
+Classes e POO
+
+- Toda linguagem de programação tem um paradigma
+- Se encontra dentro de alguma classificação
+    - Conforme suas funcionalidades
+    - Do modo como permite que nós estruturemos o nosso código
+
+- O Javascript(e diversas outras linguagens) possui vários paradigmas
+    - Orientado a Objetos
+    - Orientado a Eventos
+    - Funcional e outras
+
+- POO vem de Programação Orientada a Objetos
+    - Também conhecida como OOP (Object Oriented Programming)
+- Tem a idéia de abstrair, dentro do código, objetos do mundo real
+- Permite que os códigos interajam entre si através da troca de mensagens
+- A base são as Classes e os Objetos
+- Os Objetos nós já estamos vendo desde o módulo anterior(Dia 6 da semana 3)
+    - Conseguimos fazer mais com eles quando temos o envolvimento das Classes
+
+- Todo objeto é criado apartir de uma classe
+
+- A classe é um molde que é utilizado para criar um objeto
+    - Dentro da classe nós conseguimos definir atributos e métodos que um objeto receberá
+
+- Revendo o aprendizado
+    - O new já foi apresentado quando aprendemos Arrays e Objetos
+    - O Array é uma classe Nativa do Javascript
+        - As funções que vimos são métodos internos à classe
+        - forEach, filter, find, findIndex e etc...
+        - São criadas no objeto no momento em que chamamos o new
+        - Fazer let myArray = [] é o equivalente a let myArray = new Array()
+
+    - Com Objeto acontece o mesmo quando fazemos myObject = {}
+        - Estamos criando um objeto apartir de uma classe Nativa do JS chamada Object
+
+    - Todos os tipos que vimos até agora tem seus tipos associados
+        - String
+        - Number
+        - Boolean
+        - etc...
+
+    - Com as classes, conseguimos criar nossos próprios tipos derivados
+
+Construtores e Instâncias
+
+    - Em grande maioria, as classes podem ser instanciadas
+        - Grande maioria porque algumas linguagens podem impedir isso
+    
+    - Instância de uma classe é o que da origem ao objeto
+        - Quando dizemos que uma classe foi instanciada, estamos dizendo
+        apenas que um objeto foi criado apartir daquela classe
+
+        Instanciar -> criar um objeto apartir de uma classe
+
+    - A classe vêm com um método especial que chamamos de construtor
+        - Utilizamos para definir valores iniciais dos atributos de um objeto
+        - Este método é chamado quando criamos uma intância de uma classe com a palavra New

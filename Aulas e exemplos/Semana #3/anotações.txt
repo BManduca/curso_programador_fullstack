@@ -314,3 +314,82 @@ JavaScript + Lógica de Programação
                 - Valor é o valor que esta propriedade vai receber
             -> Também podem armazenar internamente qualquer outro tipo
                 - Inclusive Arrays e outros objetos
+
+            -> Ao ter um objeto declarado e populado, podemos acessar
+            os dados dentro deste objeto das seguintes formas:
+
+                - object.propridade
+                - object['propriedade']
+
+            -> neste exemplo estamos mostrando se a nave em si, 
+                    está engatada ou não
+                    -  Adicionando novas propriedades ao objeto:
+                    - object.isHitched = false
+
+            -> Exemplo para mostrar o nível de escudo da espaçonave
+                    - object["shieldLevel"] = 100
+
+
+            -> Ao acionar a propriedade isHitched, para ser impressa, podemos 
+            fazer da seguinte forma:
+                console.log(object["isHitched"])
+
+            -> para a propriedade shieldLevel, faremos assim:
+                - console.log(object.shieldLevel)
+
+                - Ambos os resultados serão exibidos normaalmente 
+
+            -> se caso precisar, podemos criar um objeto totalmente vazio...
+
+                let spaceships = {}
+
+                se dermos, um console.log, o object spaceships,
+                será impresso totalmente vazio
+
+            -> Armadilhas envolvendo Objetos
+
+                let spacialStation = {
+                    name: "Fox",
+                    platformsQuantity: 10,
+                    "new name": "Estelar",
+                    true: false,
+                    2: "Descoberta"
+                }
+
+                errado => console.log(spacialStation.2)
+
+                correto => console.log(spacialStation["2"])
+
+                -> Paraevitar problemas com as propriedades, 
+                é necessário tomar o cuidado e nao criar propriedades 
+                que sejam booleanas, strings, inteiros ou qualquer outro
+                formato que não seja o estilo camelCase
+
+        -> Comparando objetos e arrays
+
+            -> Objetos e arrays são estruturas diferentes, mas ambas tem acessos bem parecidos
+            -> Relembrando: 
+                - Objetos: 
+                    - São estruturas do tipo chave-valor
+                    - Utilizamos objetos quando precisamos mapear propriedades ou atributos
+                
+                - Arrays: 
+                    - São estruturas do tipo lista sequencial
+                    - Utilizamos os arrays quando precisamos armazenar uma sequência de elementos
+
+            -> Quando pensamos em objetos, conseguimos enxergar uma representação do mundo real
+
+        
+        -> Aninhando Objetos e Arrays
+            -> Termo Aninhando, vem do mundo da programação, que é quando você envolve ou 
+            adiciona uma estrutura dentro de outra, por exemplo, um array contendo um objeto ou 
+            um objeto contendo um array ou ainda um objeto contendo um objeto.
+
+        -> Adicionando funções aos objetos
+            - As propriedades de um objeto, também podem receber funções e quando isso ocorre, 
+            estas passam a se chamar métodos, as outras propriedades que não possuem funções, 
+            são nomeadas de atríbutos.
+
+
+
+                
