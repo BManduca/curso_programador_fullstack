@@ -1,0 +1,29 @@
+h2.pageTitle {
+    color: #0a4eb4;
+    text-align: center;
+}
+
+h2.realtyRegistered {
+    color: #0a4eb4;
+    text-align: center;
+    padding: 1px 0;
+}
+
+ul.listProperties {
+    border: 5px solid gray;
+    padding: 5px 0 10px 20px;
+    width: 450px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+form.formRealty {
+    border: 5px solid gray;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 0 0 10px;
+    width: 450px;
+    height: 150px;
+    text-align: center;
+}
+

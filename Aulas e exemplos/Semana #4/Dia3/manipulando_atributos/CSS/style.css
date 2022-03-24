@@ -1,0 +1,25 @@
+h2.text-principal {
+    color: rgb(34, 135, 194);
+    text-align: center;
+    text-decoration: underline black;
+
+}
+
+p.black-color {
+    color: black;
+}
+
+p.white-color {
+    color: white;
+}
+
+p.blue-background-color {
+    background-color: blue;
+    text-align: center;
+    
+}
+
+p.red-background-color {
+    background-color: red;
+    text-align: center;
+}

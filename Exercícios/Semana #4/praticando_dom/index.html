@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <script src="JS/script.js"></script>
+        <script src="JS/app.js"></script>
+        <script src="JS/main.js"></script>
+        <title>Cadastro de Imóveis</title>
+    </head>
+    <body>
+
+        <h2 class="pageTitle">
+            Cadastro de Imóveis
+        </h2>
+
+        <form class="formRealty" onsubmit="app.addProperty()">
+            <p>
+                <label>Tipo de imóvel: </label>
+                <select name="kind">
+                    <option value="" data-default disabled selected></option>
+                    <option value="Apartamento">Apartamento</option>
+                    <option value="Casa">Casa</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Área do imóvel: </label>
+                <input type="number" name="area" step="any" min="0">
+            </p>
+
+            <p>
+                <input type="checkbox" name="rented" />Alugado
+            </p>
+
+            <button type="submit">Salvar</button>
+            <button type="button" onclick="app.cleanForm()">Limpar</button>
+        </form>
+
+        <br />
+
+        <h2 class="realtyRegistered">
+            Imóveis cadastrados:
+        </h2>
+
+        <ul class="listProperties" id="properties"></ul>
+        
+    </body>
+</html>

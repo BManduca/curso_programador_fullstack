@@ -56,3 +56,287 @@ Construtores e Instâncias
     - A classe vêm com um método especial que chamamos de construtor
         - Utilizamos para definir valores iniciais dos atributos de um objeto
         - Este método é chamado quando criamos uma intância de uma classe com a palavra New
+
+Métodos
+
+    - Funções que são acrescentadas dentro dos objetos e quando lidamos 
+    com classes, eles podem ser declarados juntos, para que o 
+    objeto que foi instanciado as receba
+
+
+Associando classes 
+    - Um objeto pode ter em uma das suas propriedades, um outro objeto, que pode ter outro 
+    objeto e assim por diante
+    - classes com objetos aninhados
+
+Herança
+    - É um recurso do paradigma Orientado a Objetos
+    - Permite que classes herdem características de outras classes
+        - ou seja, declaramos uma classe que vai herdar métodos e atributos de outra classe.
+    - É uma técnica de reuso de código
+    - As duas classes devem ter uma relação de "é um"
+        - Por exemplo: Todo capitão é uma pessoa
+        - Poderia ser uma classe Captain herdando de Person
+
+Sobrescrita de métodos
+    - Ao trabalharmos com herança, não precisa necessariamente utilizar um método
+    que foi herdado de uma classe. A classe filha, que é a classe que recebe a herança, 
+    ela pode se necessário fazer a própria re-implementação de método que já tenha sido
+    declarado previamente em uma classe mãe, isso vale tanto para método normal, 
+    quanto para os Construtores.
+
+Método super
+    - quando lidamos com Sobrescrita de métodos, podemos ter casos, aonde 
+    queremos apenas incrementar uma implementação que ja foi feita em uma super-classe
+
+Métodos Get e Set
+    - São dois outros tipos de métodos que utilizamos e podemos simular variáveis 
+    que são bem úteis quando queremos formatar valores, que vão para nosso atríbuto
+
+    - Get é utilizado para retornar um valor como uma variável 
+
+Métodos estáticos
+    - diferente dos métodos tradicionais que são chamados no objeto, os estáticos
+    são chamados direto na classe
+    - Eles são bem uteis quando queremos algo que não vai se alterar, independente da instância 
+    do objeto
+
+Variáveis estáticas
+    - Semelhante aos métodos estáticos, ou seja, ligados diretamente na classe
+    - O valor de uma variável estática é o mesmo independente dos objetos que são instanciados 
+    apartir de uma classe, embora variáveis estáticas sejam bem comuns, em várias linguagens que tenham
+    paradigmas orientado a objetos, o JS não tem de forma direta...pois, podemos utilizar o Get
+    para poder gerar um método estático, ou seja, vai criar um método estático que vai se comportar
+    como uma variável
+
+Exceções:
+    - Conhecidas como exceptions, são erros que ocorrem no código
+    - São capturados em tempo de execução(runtime)
+    - Podem ser tratadas para que o código não venha a quebrar
+    - No JS, as exceções são lançadas pela classe Error
+        - Quando é instanciada e lançada, o interpretador entende que ocorreu um erro
+    - Pára a execução e exibe um erro 
+    - Podemos utilizar o try e catch para poder tratar estes erros
+    - Assim como podemos lançar nossos próprios erros
+        - Utilizamos o throw
+
+Cláusula throw
+    - Comando para conseguirmos lançar os nossos próprios erros
+    
+Bloco try, catch e finally
+
+Módulos Math and Date
+    - O Javascript tem alguns recursos nativos quando lidamos com front-end
+    - Math -> para operações matemáticas
+    - Date -> para manipulação de Datas
+
+    - Módulo Math 
+        - tem funções como pow, que é para fazer potenciação
+        - tem também a constante pi, que é relacionada com o valor pi = 3,141592....
+        - para realizar uma raiz quadrada, usamos a função presente dentro do Math, chamada sqrt
+        - doc => https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+    - Módulo Date
+        - biblioteca moment é um recurso externo, um módulo nativo do JS
+        - No Date, o més de Janeiro é relacionado como Mês 00
+        - O date tem um método estático, para retornar a data de hoje => Date.now()
+            - porém, o retorno em um console.log(), virá como um número, isso porque a base de calculo 
+            do Date é milissegundos
+            - Data base do JS é 01/01/1970
+            - esse valor númerico é o tempo decorrido em milissegundos desde a data base do JS
+        - doc => https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+Eventos no HTML
+    - Eventos são ações que ocorrem num sistema
+        - Podem ocorrer por uma ação do usuário: como um clique de um mouse ou mudança do valor de um campo
+        - Ou simplesmente como um fluxo do próprio sistema: como a página concluir seu carregamento
+
+    - No HTML conseguimos mapear os eventos e definir ações.
+
+    - após criar as functions dentro do .js, podemos acioná-las através de chamadas das funções..
+        - ex: 
+
+            events.js
+
+            function clickMe() {
+                console.log("Fui clicado!")
+            }
+
+            index.html
+
+            <p>
+                <button onclick="clickMe()">Clique-me</button>
+            </p>
+
+    - Doc Events => https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+Introdução ao DOM
+    - DOM significa Document Object Model ou Modelo de Objeto de Documento
+        - Possibilita que um documento de uma linguagem de marcação seja acessado como uma árvore de objetos
+
+        - Com esta árvore de objetos que o DOM disponibiliza, conseguimos:
+            - selecionar um determinado elemento
+            - Alterar seu contéudo
+            - Capturar o valor digitado por um usuário num campo input de um form
+
+        - Por padrão o browser já traz uma instância do DOM preparada para ser utilizada
+            - Conseguimos acessá-la com a palavra chave document
+            - É o elemento raiz de toda a árvore de objetos
+            - É apartir dela que conseguimos utilizar métodos para selecionar e manipular 
+            os elementos.
+
+
+Selecionando Elementos no DOM
+    - podemos selecionar elemento no DOM:
+        - Através do ID:
+            documento.getElementsById
+
+        - Através do Name:
+            - documento.getElementsByName
+            - neste caso, ele não selecionára um so elemento, porque no HTML
+            podemos ter vários atríbutos com mesmo name 
+            - Retornando assim, a lista de Elementos que tenham o atríbuto name
+            igual ao que foi passado como parâmetro
+
+        - Seleção por query
+            - em css, existem seletores para poder aplicar estilo nas classes e 
+            esses seletores podem ser utilizados pelo método querySelectorAll("")
+
+        - Seleção através do nome da tag
+            - document.getElementsByTagName
+            - passando somente o nome da tag em questão
+
+        - clonando o primeiro filho, ou seja o p, do formulário em questão 
+            - o clone é feito através do método cloneNode, ao qual clona o filho, 
+            ou seja, o p do formulário. Este método tem um parâmetro chamado deep,
+            se colocarmos deep como true, ele vai clonar o p e os filhos dos filhos
+            de p e caso colocar o valor do deep como false, so irá clonar o p unicamente.
+
+Enviando o DOM para a função
+
+    - podemos identificar o elemento que esta chamando uma determinada função
+    - this referencia o próprio objeto, para setar atributos ou chamar funções internas
+    - event é uma variável global no navegador 
+
+
+Evento para formulário
+    - o formulário tem um evento chamado submit, que é utilizado quando o mesmo
+    é enviado...
+
+    - propriedade onsubmit: essa propriedade, irá chamar o evento submit do formulário e este
+    evento é chamado quando existe um button do tipo submit dentro dele e este será clicado
+
+    - Toda vez que pressionamos o button com type submit, ele por padrão recarrega a página, 
+    pois é um comportamento do próprio evento
+
+    - Para evitar o recarregar da página, podemos utilizar método o event.preventDefault(), 
+    pois, este método impede que o event tenha um comportamento padrão
+
+Manipulando estilos
+    - com o DOM, conseguimos também manipular os estilos de um objeto
+
+Manipulando atributos
+    - quando selecionamos um elemento, podemos facilmente alterar seus atributos, tanto
+    pelo método setAttribute(), como pelo atributo diretamente, para alguns deles
+    é possível
+
+Eventos apartir do JavaScript
+    - Assim, como podemos adicionar eventos nos elementos diretamente no HTML, é possível também adicionar,
+    estes eventos apartir do Javascript
+
+Manipulando Eventos
+    - É possível manipular os eventos no elemento, através do JS
+    - Além de adicionar um evento, é possível remover ou disparar um evento
+
+This and arrow functions
+    - nessa parte de eventos, sabemos que podemos usar o mapeamento de funções nos 
+    listeners, utilizando arrow functions também
+    - ao usarmos o normalFunction, presente no arquivo teste, desta forma o this.name 
+    está chamando o name do próprio objeto, tanto que quando é executado, é retornando 
+    o valor que esta presente dentro de 'name'
+    - Porém, aarrow function tem um comportamento diferente, ela sempre estaré inserida 
+    no contexto de onde ela é chamada.
+
+Git e Github
+    - Objetivos do modulo:
+        - entender o que é Git e porque ele é importante
+        - aprender a instalar e configurar o Git
+        - Dominar os principais comandos do Git
+        - aprender como usar as branchs
+        - Entender o que é o Github e como utilizá-lo 
+
+O que é o Git?
+    - Git é um sistema de controle de versão de arquivos
+    - Com ele podemos desenvolver projetos colaborativos com facilidade
+    - Várias pessoas podem trabalhar no mesmo projeto, sem que uma sobrescreva o que 
+    a outra já fez
+        - trocando informações de uma maneira bém fácil
+
+    - Controle de versões
+        - Registra diferentes modificações de um arquivo
+        - Permite recuperar uma versão específica
+        - Pode resolver os seguintes problemas:
+            - perda de arquivos importantes
+            - Resgate da versão anterior
+        - Fluxo de trabalho:
+            - Workdir: Diretório de arquivos do projeto do computador
+            - Index: Área temporária de arquivos
+            - Head: Aponta para o último commit (versão salva) do projeto
+
+    - Fluxo de trabalho
+        - Workdir: Diretório de arquivos do projeto no computador
+        - Index ou repositório de staging: Área temporária de arquivos
+        - HEAD: Aponta para o último commit(versão salva) do projeto
+
+- Github:
+    - Serviço para hospedar projetos Git
+    - Permite projetos privados ou Open Source
+    - Ajuda a desenvolver um networking entre programadores
+    - Serve como portfólio online
+
+- Principais comandos no terminal
+    - echo ['Aqui vai a mensagem'] -> colocando mensagem na tela
+    - echo 'Algum texto' >> [nome_do_arquivo].extensão -> realiza o salve do texto dentro
+    desse arquivo
+    - pwd -> mostra respectivamente a pasta/diretório que você se encontra
+    - cd [caminho desejado] -> navega para outra pasta
+    - ls -> mostra os elementos presentes no diretório
+    - mkdir [nome da pasta] -> cria uma nova pasta
+    - rm [nome do arquivo] -> apaga o arquivo
+    - rm -rf [nome da pasta] -> apaga uma pasta
+    - sudo [comando] -> permitir rodar comandos que necessitam de privilégio de super usuário
+    - touch [nome desejado do arquivo] -> cria ou atualiza um arquivo
+    - cat [nome do arquivo] -> captura o conteúdo de um arquivo e o mostra na tela
+    - less [nome do arquivo] -> mostra o conteúdo de um arquivo no console
+    - history -> mostra o histórico de comandos
+    - grep [texto desejado] [arquivo desejado] -> filtra o conteúdo de um arquivo através 
+    do texto desejado e mostra na tela o resultado
+    - cp [nome do arquivo] [nome de um novo arquivo] -> copia o conteúdo de uma arquivo
+    para um novo arquivo
+    - mv [nome do arquivo] [nome de um novo arquivo] -> move o conteúdo de arquivo para outro
+    apagando o anterior
+    - clear -> limpa os textos que estão aparecendo no console
+    - exit -> fecha a sessão atual
+
+- Instalando o Git
+    - http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git
+    - selecionar o OS
+        - ao selecionar, terá todos os comandos de instalação
+
+- Configurando o Git
+    - Git name e Git email
+    - acessar o terminal(console)
+        - git config --global user.name "Seu Nome" 
+        - git config --global user.email "seuemail@email.com"
+
+    - para verificar essas infos
+        - git config --list
+
+- Criando um novo repositório
+    - git init
+        - o git irá criar toda uma estrutura de arquivos git, para que o mesmo
+        consiga versionar os arquivos, mantendo assim tudo versionado e também 
+        um histórico
+        - os arquivos do git ficam ocultos
+
+- Ciclo de vida dos arquivos

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/script.js"></script>
+    <title>Manipulando o DOM</title>
+</head>
+<body>
+    <h1>Home registration</h1>
+
+
+    <form>
+        <p>
+            <label>Número da residência </label>
+            <input type="text" name="residence-number" onchange="">
+        </p>
+
+        <p>
+            <label>Bairro </label>
+            <input type="text" name="neighborhood" onmouseover="">
+        </p>
+
+        <p>
+            <label>Cidade </label>
+            <input type="text" name="city" onmouseover="">
+        </p>
+
+        <p>
+            <label>Área da casa </label>
+            <input type="text" name="house-area" onmouseover="">
+        </p>
+
+        <button onclick="saveHouse()" type="button">Salvar</button>
+    </form>
+
+    <ul id="house-list">
+
+    </ul>
+</body>
+</html>
