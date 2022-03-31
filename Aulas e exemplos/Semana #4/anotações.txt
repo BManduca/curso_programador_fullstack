@@ -340,3 +340,26 @@ O que é o Git?
         - os arquivos do git ficam ocultos
 
 - Ciclo de vida dos arquivos
+    - Arquivos possuem 2 estados possíveis
+        - Monitorado
+            - arquivos do último snapshoot (arquivos que já sofreram o commit)
+            - podem estar:
+                - inalterados -> arquivos que no último snapshoot, tinha um conteúdo e permaneceu com mesmo conteúdo
+                - modificados -> arquivos que estavam presentes no último commit, mas agora estão diferentes.
+                - selecionados -> arquivos que são adicionados na staging, quando é efetuado o git add...
+        - Não Monitorado
+            - Arquivos que não estavam no último snapshoot
+            - arquivos que não estão na área de seleção -> não aplicou o git add
+
+
+- Realizando primeiro commit
+    - criar uma pasta
+    - dar um git init
+    - criar um novo arquivo -> touch nome_arquivo.js
+    - editar o arquivo -> nano nome_arquivo.js
+    - git status -> mostrará as infos do arquivo
+    - para deixar o arquivo monitorado -> git add nome_arquivo.js
+    - git status -> verificar que o arquivo esta sendo monitorado
+    - commitando o arquivo -> git commit -m 'Criando novo arquivo'
+    - git pull -> para enviar para o repositório master
+    - git push -> para atualizar repositório
