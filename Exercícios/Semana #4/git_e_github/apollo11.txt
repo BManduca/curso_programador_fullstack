@@ -3,4 +3,4 @@ Data: 14 de novembro de 1969
 Descrição:
 Apollo11 foi um vôo espacial tripulado norte-americano, responsável pelo
 primeiro pouso na Lua. Os astronautas Neil Armstrong e Buzz Aldrin,
-aluniisaram o módulo lunar Eagle em 20 de Julho de 1969 às 20:17 min UTC 
+aluniisaram o módulo lunar Eagle em 20 de Julho de 1969 às 20:17 min UTC
