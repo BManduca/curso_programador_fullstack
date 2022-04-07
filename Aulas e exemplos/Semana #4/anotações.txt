@@ -363,3 +363,62 @@ O que é o Git?
     - commitando o arquivo -> git commit -m 'Criando novo arquivo'
     - git pull -> para enviar para o repositório master
     - git push -> para atualizar repositório
+
+- Visualizando logs
+    - git log => mostra os commits que foram efetuados
+    - git log --pretty=oneline => mostra os logs de maneira mais clean e em uma linha cada
+    - git log --pretty=oneline -1 => mostra somente a ultima linha
+    - git log --stat => mostrar os status dos logs/do que foi feito no projeto
+
+- Visualizando as diferenças
+    - visualizar algumas alterações/diferenças no tempo que foram feitas, com relação ao commit
+    - comando git diff => mostra as diferenças existentes
+    - git diff --name-only => mostra somente o nome do arquivo que tem diferenças
+
+- Desfazendo alterações
+    - se caso acontecer de esquecer de adicionar uma alteração em um commit e ele ja foi 'commitado', so fazer
+    o seguinte:
+        - dar um git add no arquivo e em seguida dar um git commit --amend
+        - na sequencia ira abrir o editor para alterar a mensagem do commit
+        - serve para organizar os commits
+
+        - se caso quiser so alterar a mensagem do commit, é só não ter alteração nenhuma add
+        e der o git commit --amend
+
+    - removendo um arquivo da área de seleção
+        - se caso acontecer de eu subir uma alteração para staging e depois ver que não era pra ser feito, 
+        posso aplicar o seguinte comando:
+            - git reset HEAD (nome_arquivo) => aplicando resete para como estava no HEAD
+
+    - desfazendo alteração no próprio arquivo
+        - git checkout -- (nome_arquivo) => volta para ultima alteração salva(commit)
+
+- O que são branchs?
+    - Branchs(ramos) servem para desenvolvermos features isoladas
+    - a branch master é a principal
+    - é possível misturar as branchs usando o comando merge
+
+- Como utilizar as branchs?
+    - visualizar as brancs existentes ==> git branch
+
+    - criando uma branch ==> git branch (nome_branch)
+    - como mudar de branch ==> git checkout (nome_branch)
+    - como deletar uma branch ==> direcionar até a master e git branch -D (nome_branch)
+    - como criar e navegar para uma branch com um único comando => git checkout -b (nome_branch)
+
+- O que é merge e como utilizar?
+    - Merge faz a mistura entre duas branchs
+    - merge envia as mudanças de uma branch para a outra
+    - apenas a branch algo sofrerá as mudanças
+
+    - criar nova pasta
+    - dar o git init
+    - criar novo arquivo ou novos
+    - criar branch
+    - salvar alteração 
+    - voltar branch master
+    - efetuar merge da nova brach criada com a master
+
+
+- Conhecendo um repositório no Github
+    - 
