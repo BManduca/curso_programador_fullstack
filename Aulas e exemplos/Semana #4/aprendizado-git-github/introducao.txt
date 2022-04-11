@@ -1,0 +1,55 @@
+Aprendendo sobre git e github
+
+O que é o Git?
+    - Git é um sistema de controle de versão de arquivos
+    - Com ele podemos desenvolver projetos colaborativos com facilidade
+    - Várias pessoas podem trabalhar no mesmo projeto, sem que uma sobrescreva o que 
+    a outra já fez
+        - trocando informações de uma maneira bém fácil
+
+    - Controle de versões
+        - Registra diferentes modificações de um arquivo
+        - Permite recuperar uma versão específica
+        - Pode resolver os seguintes problemas:
+            - perda de arquivos importantes
+            - Resgate da versão anterior
+        - Fluxo de trabalho:
+            - Workdir: Diretório de arquivos do projeto do computador
+            - Index: Área temporária de arquivos
+            - Head: Aponta para o último commit (versão salva) do projeto
+
+    - Fluxo de trabalho
+        - Workdir: Diretório de arquivos do projeto no computador
+        - Index ou repositório de staging: Área temporária de arquivos
+        - HEAD: Aponta para o último commit(versão salva) do projeto
+
+
+  - Github:
+    - Serviço para hospedar projetos Git
+    - Permite projetos privados ou Open Source
+    - Ajuda a desenvolver um networking entre programadores
+    - Serve como portfólio online
+
+- Principais comandos no terminal
+    - echo ['Aqui vai a mensagem'] -> colocando mensagem na tela
+    - echo 'Algum texto' >> [nome_do_arquivo].extensão -> realiza o salve do texto dentro
+    desse arquivo
+    - pwd -> mostra respectivamente a pasta/diretório que você se encontra
+    - cd [caminho desejado] -> navega para outra pasta
+    - ls -> mostra os elementos presentes no diretório
+    - mkdir [nome da pasta] -> cria uma nova pasta
+    - rm [nome do arquivo] -> apaga o arquivo
+    - rm -rf [nome da pasta] -> apaga uma pasta
+    - sudo [comando] -> permitir rodar comandos que necessitam de privilégio de super usuário
+    - touch [nome desejado do arquivo] -> cria ou atualiza um arquivo
+    - cat [nome do arquivo] -> captura o conteúdo de um arquivo e o mostra na tela
+    - less [nome do arquivo] -> mostra o conteúdo de um arquivo no console
+    - history -> mostra o histórico de comandos
+    - grep [texto desejado] [arquivo desejado] -> filtra o conteúdo de um arquivo através 
+    do texto desejado e mostra na tela o resultado
+    - cp [nome do arquivo] [nome de um novo arquivo] -> copia o conteúdo de uma arquivo
+    para um novo arquivo
+    - mv [nome do arquivo] [nome de um novo arquivo] -> move o conteúdo de arquivo para outro
+    apagando o anterior
+    - clear -> limpa os textos que estão aparecendo no console
+    - exit -> fecha a sessão atual
