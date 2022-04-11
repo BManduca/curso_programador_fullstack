@@ -421,4 +421,57 @@ O que é o Git?
 
 
 - Conhecendo um repositório no Github
-    - 
+    - no repositório é mostrado:
+        - total de commits
+        - branchs
+        - contribuintes
+        - cada item do repositório tem sua mensagem de commit
+        - mostra também a quantidade de dias que se passa desde último 
+        commit
+
+ - Clonando um projeto do github
+        - abrir o repositório
+        - ir na parte de clone or download
+            - onde pode baixar a pasta .zip
+            - mas também da pra baixar usando as opções do Git
+
+            - Alternativas do git para baixar o projeto:
+                - através do HTTPS => realizar download normalmente, através da web
+                 e também por ssh, forma mais segura de lhe dar com seus dados e arquivos
+
+                Exemplo: 
+                    - selecionar o endereço que vem dentro do clone or download
+                    - acessar a pasta aonde irá clonar o projeto
+                        - comando: git clone (url_presente_na_opc_clone)
+
+            - acessar o diretório 
+                - e abrir o code no editor de texto
+
+            - prestar atenção no readme que é feito mark down
+
+    - Criando um novo repositório no Github
+        - pode ser através bo button `New` ou
+        através do button plus(+) e em seguida clicar em 
+        novo repositório.
+
+    - Baixando as atualizações de um projeto
+        - ao trabalhar colaborativamente, outras pessoas podem modificar 
+        a master do projeto, caso elas tenham autorização pra isso.
+        - Criando novas branchs ou até mesmo aceitar um pull request, 
+        para por exemplo, um programa que foi feito via fork, 
+        possa ser integrado ao original mais tarde.
+
+        - git push => 'empurrar para o git''
+        - origin => é definido no momento que é efetuado o clone
+        - a origin poderia ser também do gitlab ou do bitbucket
+
+        - 'git push origin master' => mandando alterações para a branch original
+
+- Ignorando arquivos
+    - inicialmente criar o arquivo .gitignore
+    - adicionar no gitignore todos os arquivos que não serão monitorados.
+
+ 
+
+                
+
