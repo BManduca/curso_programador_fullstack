@@ -399,7 +399,7 @@ O que é o Git?
     - é possível misturar as branchs usando o comando merge
 
 - Como utilizar as branchs?
-    - visualizar as brancs existentes ==> git branch
+    - visualizar as branchs existentes ==> git branch
 
     - criando uma branch ==> git branch (nome_branch)
     - como mudar de branch ==> git checkout (nome_branch)

@@ -1,4 +1,4 @@
 meupassword.txt
 
 # Visual Studio Code
-.vscode/
+.vscode/*
