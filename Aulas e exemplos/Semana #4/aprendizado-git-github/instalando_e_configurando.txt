@@ -1,0 +1,20 @@
+- Instalando o Git
+    - http://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git
+    - selecionar o OS
+        - ao selecionar, terá todos os comandos de instalação
+
+- Configurando o Git
+    - Git name e Git email
+    - acessar o terminal(console)
+        - git config --global user.name "Seu Nome" 
+        - git config --global user.email "seuemail@email.com"
+
+    - para verificar essas infos
+        - git config --list
+
+- Criando um novo repositório
+    - git init
+        - o git irá criar toda uma estrutura de arquivos git, para que o mesmo
+        consiga versionar os arquivos, mantendo assim tudo versionado e também 
+        um histórico
+        - os arquivos do git ficam ocultos
