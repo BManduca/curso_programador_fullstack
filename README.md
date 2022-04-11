@@ -3,4 +3,4 @@
 
 <p>Ministrado pela escola de programação OneBitCode</p>
 
-![Curso programador full stack JS pro]()
+![Curso programador full stack JS pro](https://raw.githubusercontent.com/BManduca/curso_programador_fullstack/master/logo_curso_fullstack.png)
