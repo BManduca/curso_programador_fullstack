@@ -1,0 +1,34 @@
+Versões do ECMAScript => JavaScript Moderno (ES6+)
+  - É o nome oficial do JavaScript
+  - "JavaScript" já estava patenteado
+  - ECMA(European Computer Manufacture Association) é uma associação
+  de padronização de sistemas de informação.
+
+- Evolução das versões:
+  - Até o momento estamos na versão ES8(EcmaScript 8)
+  - Lançada em 2017
+  - Antes da ES8 tivemos:
+    - ES7 em 2016
+    - ES6 em 2015
+    - ES5 em 2009
+
+- Compatibilidades
+  - O JavaScript não teve uma evolução consistente
+    - Grande espaço de lançamento entre as versões 5 e a 6
+    - Houve uma versão 3 em 1999 e uma 4 que nunca foi lançada
+
+  - A versão 6(2015) veio com muitas novidades
+  - Temos ainda o problema de suporte dos navegadores
+    - As versões já lançadas nunca conseguirão suportar as 
+    versões mais novas do JS.
+
+  - Surge a necessidade de ferramentas que convertam para as versões do JS
+    - Que possibilita que nós, enquanto desenvolvedores, possamos utilizar
+    as versões mais recentes.
+    - Que não impeça o código de executar em navegadores que ainda não 
+    suportam.
+
+  - Temos uma ferramenta que nos auxilia a ver como esta a evolução dos 
+  navegadores.
+    - caniuse.com
+      - bem importante quando lidamos com a programação voltada para o front-end

@@ -475,3 +475,14 @@ O que é o Git?
 
                 
 
+Conectando ao Github com uma chave SSH
+    - SSH é uma chave que vai estar na sua máquina,
+    que vai identificar o github sobre sua autenticidade..como como
+    se fosse um código que fica na sua máquina, que explica 
+    para o Github qual é a sua identidade... deixando assim, 
+    tudo mais seguro..
+
+    - guia para adicionar o SSH
+        https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+    
+    
