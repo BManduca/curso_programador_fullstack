@@ -32,3 +32,22 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
   navegadores.
     - caniuse.com
       - bem importante quando lidamos com a programação voltada para o front-end
+
+
+- Interpolação de String
+
+  - Uma string pode ser representada por dois ``, embora não seja comum em todas as linguagens...
+  veremos uma utilidade dessa funcionalidade, através da Interpolação de strings
+
+
+- Desestruturação de Objetos e Arrays
+  - Desestruturação é uma expressão JS que possibilita extrair dados de arrays e objetos em variáveis 
+  distintas 
+
+  - Para os arrays, é bem semelhante com objetos, so é necessário colocar as variáveis na mesma ordem dos 
+  índices que se quer extrair
+
+
+- Operador Spread 
+  - Recurso disponível apartir do ES6, que permite expandir os elementos de um objeto iteravel
+  - Objeto iteravel, é aquele que conseguimos percorrer elemento a elemento, como a string e os arrays.
