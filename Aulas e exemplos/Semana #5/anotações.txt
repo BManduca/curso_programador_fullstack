@@ -51,3 +51,25 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
 - Operador Spread 
   - Recurso disponível apartir do ES6, que permite expandir os elementos de um objeto iteravel
   - Objeto iteravel, é aquele que conseguimos percorrer elemento a elemento, como a string e os arrays.
+
+- O que é NodeJS e como instalar
+  - Interpretador de código JS
+  - Criado por Ryan Dahl em 2009
+  - Utiliza como motor o interpretador JavaScript V8 da Google
+    - permite que criamos códigos que serão executados fora do Browser
+    - Seja no terminal, backend de uma aplicação, etc...
+  - Conseguimos utilizar tudo que aprendemos sobre JavaScript
+
+  - Existem ferramentas que são importantes e auxiliam no desenvolvimento front-end e que foram desenvolvidas em NodeJS,
+  ou seja, existem ferramentas que foram desenvolvidas em JavaScript que suporta o desenvolvimento também em JavaScript
+
+
+
+  - No terminal:
+    - sudo apt ou apt-get install curl
+    - curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+
+    - sudo apt install -y nodejs
+
+    - verificando versão do NodeJS => node -v
+
