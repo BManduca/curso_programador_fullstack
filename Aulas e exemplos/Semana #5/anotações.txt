@@ -49,8 +49,13 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
 
 
 - Operador Spread 
-  - Recurso disponível apartir do ES6, que permite expandir os elementos de um objeto iteravel
-  - Objeto iteravel, é aquele que conseguimos percorrer elemento a elemento, como a string e os arrays.
+  - Recurso disponível apartir do ES6, que permite expandir os elementos de um objeto iterável
+  - Objeto iterável, é aquele que conseguimos percorrer elemento a elemento, como a string e os arrays.
+
+- Rest param
+  - O operador spread, tem uma utilidade de fazer com que uma função um número 
+  indeterminado de parâmetros e isso é o rest params.
+  - consegue estruturar todo um conteúdo em um array
 
 - O que é NodeJS e como instalar
   - Interpretador de código JS
