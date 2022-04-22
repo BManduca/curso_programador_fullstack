@@ -78,3 +78,65 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
 
     - verificando versão do NodeJS => node -v
 
+
+
+- JSON
+  - JSON significa JavaScript Object Notation
+  - Um formato de representação de dados no formato texto
+  - Ele é derivado da forma como os objetos do JS são organizados 
+
+  - Por que usar?
+    - Diferentes sistemas precisam se comunicar
+      - É necessário que exista um padrão para que possam mandar dados um para o outro
+
+    - JSON é um formato bem compacto e altamente adotado
+
+    - Pode ser um texto salvo num arquivo
+      - geralmente num arquivo com formato .json
+
+    - Ou até mesmo numa string
+
+
+  Exemplo:
+
+    {
+      "name": "Terra",
+      "physicalCharacteristics": {
+          "surfaceArea": 510072000,
+          "equatorialDiameter": 12756.2
+      },
+      "colors": ["Azul", "Branco", "Marrom"],
+      "startRotation": "00:00",
+      "finishRotation": "23:59"
+    }
+
+    - O JS tem um classe que é chamada de JSON.parse, onde ela converte um texto JSON em um objeto.json
+
+      ficando assim => JSON.parse(aqui_o_texto_json)
+
+- NPM e Yarn
+  - O yarn e o npm são dois gerenciadores de pacotes do Javascript.
+    - NPM vem de Node Package Manager
+
+  - O Yarn surgiu em contrapartida ao NPM, que apresentava problemas de performance
+    - Criado pelo Facebook
+
+  - Com o surgimento do Yarn, o NPM melhorou e vários destes problemas foram resolvidos
+
+
+  - Mas o que é um gerenciador de pacotes??
+    - É uma ferramenta responsável por gerenciar as depêndencias da aplicação
+    - Conseguimos instalar dependências(pacotes) pela linha de comando
+    - Permite que mantenhamos as versões necessárias das ferramentas para a aplicação
+    
+
+  - Npm é uma ferramenta que possui 3 recursos:
+    - Uma ferramenta de linha de comando para instalar pacotes
+    - Repositório de pacotes Javascript
+      - Quando executamos um comando de instalação, o NPM busca o próprio repositório
+    - Site para pesquisa sobre documentação de um pacote
+
+      exemplo: npmjs.com/package/moment
+
+      - o NPM já vem instalado junto do Javascript
+        - verificando versão: npm --version
