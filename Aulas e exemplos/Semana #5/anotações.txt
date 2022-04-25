@@ -140,3 +140,27 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
 
       - o NPM já vem instalado junto do Javascript
         - verificando versão: npm --version
+
+  - NPM init e instalações de pacotes
+    - para instalar biblioteca no projeto e colocar como dependência, faremos
+    da seguinte forma: 
+      - npm install (nome_biblioteca) --save
+        - o save serve para adicionar a biblioteca como dependência no 
+        projeto
+
+  - Transpilação com Babel
+    - Transpilar é converter o código que está numa linguagem para outra
+    - Babel é utilizado para isso
+      - Converte o código numa versão do ECMA para outras versões anteriores
+    - Desenvolvido em JavaScript
+    - Utilizado para permitir compatibilidade com navegadores que ainda não suportam
+    determinadas versões.
+
+    - instalando o pacote do babel:
+      - npm install @babel/core @babel/cli @babel/preset-env --save-dev
+        - core: a base para o funcionamento do babel
+        - cli: para utilizar o babel por linha de comando
+        - preset-env: pacote para converter qualquer versão do ES6 ou superior para o 
+        ES5 e quando utilizamos o --save-dev, é incluso o pacote que instalamos 
+        apenas no dev-dependencies no package.json, isso porque 
+        ele não é um pacote utilizado em prod
