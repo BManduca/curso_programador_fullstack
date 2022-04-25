@@ -164,3 +164,24 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
         ES5 e quando utilizamos o --save-dev, é incluso o pacote que instalamos 
         apenas no dev-dependencies no package.json, isso porque 
         ele não é um pacote utilizado em prod
+
+
+- babel.config.js e .babelrc
+
+  - arquivos de configuração do Babel
+  - Babel 7 foi lançado em 2018
+  - Antes possuia como arquivo de configuração apenas o .babelrc
+  - No 7, passou a ser recomendada a utilização do babel.config.js
+
+  - babel.config.js
+    - é um arquivo JavaScript
+    - configuramos os presets, plugins e etc
+    - Lido no momento de converter os arquivos
+    - É utilizado na Raiz do projeto para as configurações padrões
+
+  -.babelrc
+    - É um arquivo JSON
+    - Configuramos os presets, plugins e etc.
+    - Lido no momento de converter os arquivos
+    - É utilizado em subdiretórios para sobrescrever os 
+    valores padrões que vem no babel.config.js
