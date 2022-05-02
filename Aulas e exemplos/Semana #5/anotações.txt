@@ -185,3 +185,13 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
     - Lido no momento de converter os arquivos
     - É utilizado em subdiretórios para sobrescrever os 
     valores padrões que vem no babel.config.js
+
+
+  - informações:
+    - para instalar uma versão de um pacote em especifico, podemos 
+    fazer da seguinte forma: npm install core-js@3 --save
+
+- NPX e NPM Scripts
+  - ao usar o comando npx no terminal, na verdade estamos colocando 
+  um atalho para ./node_modules/.bin/... e a ferramenta que queremos 
+  executar
