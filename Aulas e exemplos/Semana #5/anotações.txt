@@ -195,3 +195,15 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
   - ao usar o comando npx no terminal, na verdade estamos colocando 
   um atalho para ./node_modules/.bin/... e a ferramenta que queremos 
   executar
+
+- Desvendando o Webpack
+  - É uma ferramenta conhecida como static module bundler
+  - Lê todo o código e monta um gráfico de dependências
+  - Este gráfico é utilizado par montar os pacotes de código para ser utilizado
+  no front-end
+  - A idéia é ter todo o código modularizado no JS
+    - Através do código e do arquivo de configuração do Webpack
+  - Possui espaço para plugins e loaders
+    - Permite incluir outros tipos de arquivos além do JS ou 
+    transpilar os arquivos JS com o Babel
+  - Tudo no Webpack é configurado num arquivo webpack.config.js(nome padrão)
