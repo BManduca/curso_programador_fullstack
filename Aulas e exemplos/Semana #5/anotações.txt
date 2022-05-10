@@ -148,6 +148,10 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
         - o save serve para adicionar a biblioteca como dependência no 
         projeto
 
+    - npm init -> serve para inicializar o diretório e podemos utilizar 
+    o parâmetro -y para nao responder as perguntas feitas e trazer tudo de 
+    maneira padrão
+
   - Transpilação com Babel
     - Transpilar é converter o código que está numa linguagem para outra
     - Babel é utilizado para isso
