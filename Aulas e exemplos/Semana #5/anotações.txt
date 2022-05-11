@@ -211,3 +211,14 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
     - Permite incluir outros tipos de arquivos além do JS ou 
     transpilar os arquivos JS com o Babel
   - Tudo no Webpack é configurado num arquivo webpack.config.js(nome padrão)
+  - comando para rodar webpack
+    - npx webpack
+  - o import nativo do JS acima da versao 6, o webpack tem a sagacidade de 
+  ler e interpretar o import de uma maneira que ele consiga gerenciar as 
+  depedências da aplicação e importar o codigo para o usuário, sem precisar ficar 
+  mapeando o móódulo direto no HTML
+  - ao executar o comando npx webpack --mode development 
+    - função para exportar os arquivos otimizados para desenvolvimento
+    - o resultado é o arquivo index.js presente dentro do dist
+
+   
