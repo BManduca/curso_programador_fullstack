@@ -221,4 +221,18 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
     - função para exportar os arquivos otimizados para desenvolvimento
     - o resultado é o arquivo index.js presente dentro do dist
 
-   
+- Introdução aos Módulos (JS)
+  - São arquivos de código que dividimos para importar quando necessário
+  - Quando estamos programando, nosso código pode ser dividido em partes que permitam:
+    - Reusabilidade
+    - Manutenibilidade
+    - Separação de contextos
+  - Antes do ES6, o JS não possuía um jeito de tratar módulos
+  - Foram criados vários padrões, dentre eles o CommonJS
+    - É uma especificação de modularização para o Javascript
+  - É o padrão que o NodeJS adota
+    - Após o surgimento do ES6, o node conseguiu adaptar sua estrutura
+    para utilizar este novo formato que será estudado, mas manteve o 
+    formato do CommonJS.
+    - Graças ao Babel também podemos utilizar no frontend
+  
