@@ -235,4 +235,12 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
     para utilizar este novo formato que será estudado, mas manteve o 
     formato do CommonJS.
     - Graças ao Babel também podemos utilizar no frontend
+
+
+  - comandos importantes:
+    - npm install @babel/core @babel/preset-env babel-loader core-js@3
+    - npm install
+    - npm install webpack-dev-server --save-dev
+
+  
   
