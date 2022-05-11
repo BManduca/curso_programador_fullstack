@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     filename:'[name].bundle.js',
-    //__dirname -> pegando diretorio atual e concatenando com o dist
+    //__dirname -> pegando diretório atual e concatenando com o dist
     path: path.resolve(__dirname, 'dist')
   },
   module: {

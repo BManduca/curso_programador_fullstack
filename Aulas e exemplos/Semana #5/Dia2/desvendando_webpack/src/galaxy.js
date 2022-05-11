@@ -1,1 +1,1 @@
-alert("Bem vindo a via láctea!!")
+alert("Bem vindo a Constelação de Andromeda!!")
