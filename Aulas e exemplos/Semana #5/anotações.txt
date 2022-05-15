@@ -242,5 +242,7 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
     - npm install
     - npm install webpack-dev-server --save-dev
 
-  
+- Export Default
+  - É possível ter mais de um export declarado por arquivo
+  - o Export default define qual será o export padrão de um determinado arquivo
   
