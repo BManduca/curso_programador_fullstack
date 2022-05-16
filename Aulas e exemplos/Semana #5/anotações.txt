@@ -245,4 +245,21 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
 - Export Default
   - É possível ter mais de um export declarado por arquivo
   - o Export default define qual será o export padrão de um determinado arquivo
-  
+
+- Exports Nomeados
+  - Com os exports nomeados conseguimos exportar mais de um recurso por arquivo
+  JS.
+  - Muitas vezes quando temos no arquivo, somente uma classe, nao necessariamente 
+  precisamos usar o export nomeado e sim podemos usar o default
+  - através do export, podemos tambem exportar functions e até constantes
+  - como no caso do planet_operations, onde criamos a const AU_IN_KILOMETERS, 
+  ao usar ela na function convertAuToKm, não foi mais preciso referenciar ela 
+  com o this, pois agora ela pode ser acessada diretamente como const
+
+- Renomeando Exports e Imports
+  - quando fazemos um export ou import nomeado nós podemos colocar 
+  outro nome no momento em que o mesmo é importado/exportado, para que 
+  estes nomes fiquem disponíveis para utilização....
+  - para renomear o export, basta no momento que for aplicar o export, 
+  adicionar ao lado do nome a ser exportado, um as e o nome desejado, 
+  que passará a ser novo nome do export e assim funciona para o import também.
