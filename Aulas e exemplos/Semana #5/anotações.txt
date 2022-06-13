@@ -263,3 +263,46 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
   - para renomear o export, basta no momento que for aplicar o export, 
   adicionar ao lado do nome a ser exportado, um as e o nome desejado, 
   que passará a ser novo nome do export e assim funciona para o import também.
+
+- setInterval e setTimeout
+  - São funções de alta ordem(recebe outra função como parâmetro)
+  - Executam a função depois de um tempo decorrido
+  - a setTimeout executa apenas uma vez
+  - a setInterval executa em intervalos de tempo
+
+- Síncrono e Assíncrono
+  - Uma execução Síncrona segue um fluxo linear
+  - executa passo a passo do trecho do código
+  - Só executa uma instrução após a anterior ter sido executada
+  - A execução Assíncrona não segue esse formato
+  - Não aguarda o fim da execução para passar para o proxímo passo
+  - Passa para a instrução seguinte sem aguardar a conclusão da atual
+
+- Promises
+  - Recursos assíncronos bem importantes do JS
+  - Basicamente dão suporte para operações assíncronas
+  - Guardam a operação que precisamos dentro de um objeto cuja classe é chamada
+  de Promise
+  - Quando precisamos executar, basta chamar este objeto
+
+  - Promise possui quatro estados:
+    - Pendente: quando a Promise é criada e ainda não foi executada
+    - Realizada: quando teve sucesso na operação
+    - Recusada: quando teve falha na operação
+    - Estabelecida: quando foi realizada ou recusada
+  - Pendente é o estado inicial
+  - Nós decidimos se ela vai para Realizada ou recusada
+  - Function promise, recebe uma function anonima e como parametro
+  recebe o resolve(Promise recebe status de realizado) e o reject(Promise recebe 
+  status de rejeitado)
+
+  - Utilizando o Catch
+    - O catch é chamado quando uma promisse da um reject, ou seja, 
+    quando ela é rejeitada, encerrando com algum erro
+    - para capturar o erro na promisse podemos estar escolhando usar o catch
+
+
+  - Promise Encadeada
+    - Uma promise sempre retorna uma outra promise, ou seja, implicitamente o then, sempre
+    irá retornar uma outra promise, porém, é possível explicitamente, retornar uma promise nossa
+    
