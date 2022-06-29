@@ -306,3 +306,82 @@ Versões do ECMAScript => JavaScript Moderno (ES6+)
     - Uma promise sempre retorna uma outra promise, ou seja, implicitamente o then, sempre
     irá retornar uma outra promise, porém, é possível explicitamente, retornar uma promise nossa
     
+
+  - Executando várias Promise
+    - Operação atômica, ou seja, todas serão executadas com sucesso, ou retornar um erro para alguma promise que 
+    venha ter resultado com erro
+
+- Async function
+  - para trabalhar com async functions precisa ser instaladado dois pacotes para 
+  que o babel seja capaz de realizar a Transpilação o ES5, quando utilizarmos async function
+    - pacotes: corejs e o regenerator runtime 
+
+    - npm install core-js@3 regenerator-runtime --save
+    - instalação feita com --save para ser utilizado em prod e para que a 
+    Transpilação do ES5 funcione, pois, o ES5 não tem meios nem recursos
+    para lidar com async function naturalmente 
+
+  - Async functions são funções que lidam com ações assíncronas
+  - Retornam promises
+    - então, podemos tratá-las exatamente como tratamos as Promises, utilizando then
+    e catch
+  - Evitamos ficar instanciando Promises manualmente
+
+- Capturando erro das Async functions
+
+- Await
+  - É uma palavra-chave que pode ser utilizada dentro de uma async function
+  - Com ela, é possível aguardar a execução de uma Promise 
+    - Só é possível utilizar quando temos Uma Promise que depende da execução de 
+    outra
+  - Faz com que a chamada da Promise retorne diretamente o seu resolve
+  - Com Await podemos eliminar o uso de then interno a outro 
+  - Quando ocorre algum erro, podemos utilizar o tratamento de exceções
+
+  - Executando várias promises com Await
+    - nesta parte podemos estar combinando a execução de duas ou mais funções de maneira atômica, onde
+    ou as duas darâo restuldo certo ou as duas dão errado.
+    - Para isso dar certo, podemos utilizar o promise.all, onde podemos utilzar tambem quando estamos 
+    envolvendo async functions
+
+
+- O que é uma API?
+  - É uma sigla para Application Programming Interface (Interface de Programação de Aplicações)
+  - É um termo Antigo, que surgiu antes da própria Web
+  - Um meio pelo qual dois sistemas se comunicam
+    - Um consegue utilizar a funcionalidade do outro
+    - Permite a um sistema enviar e receber dados]
+
+  - Com a internet, novos tipos de APIs surgiram
+  - A mais utilizada hoje é a REST API
+  - Ela é feita sobre o protocolo HTTP
+    - Envolve requisições Web
+
+  - Da mesma forma que requisitamos páginas web pelo browser, podemos também solicitar recursos através 
+  de APIs Restful -> api que obedece o padrão rest
+
+
+  REST -> significa REpresentational State Transfer ou Transferência de Estado Representacional
+    - É um modelo
+    - Consistem em regras e padrões, que permite a criação de APIs bem definidas
+    - Como funciona sobre o HTTP, acaba utilizando seus verbos de acesso
+      - GET, POST, PATCH/PUT e DELETE 
+
+  - Requisições para APIs
+    - Quando digitamos uma URL no navegador, estamos fazendo uma requisição
+      - Ela nos retorna uma página web
+      - É uma requisição HTTP
+
+    - Para APIs também fazemos uma requisição para uma URL
+      - Mas não nos retorna uma página
+      - Nos retorna dados: JSON, XML, etc...
+
+  - Requisições Get
+    - No JavaScript 6, existe uma nova funcionalidade para consumir APIs chamado de fetch, 
+    onde este retorna uma promise e dentro do resolve desta promise, tem um objeto com a 
+    resposta da API.
+
+    - Consumindo uma API da Nasa, aonde ela retorna NEO(Near Earth Object) ou seja, objetos que 
+    passaram por perto da Terra
+      - aonde tem também um atríbuto, que é o Sentry, o qual identifica ou informa se é um objeto 
+      com risco de colisão ou não

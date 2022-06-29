@@ -1,0 +1,47 @@
+ - React
+    = Uma das bibliotecas mais conhecidas no mercado de trabalho
+
+    - React é "uma biblioteca JavaScript declarativa, eficiente e flexível 
+    para a criação de interfaces do usuário(UI)"
+
+    - Surgiu em 2011 no facebook
+
+    - Características
+        - É uma biblioteca, não um framework
+            - O React resolve um problema digamos significavelmente 
+            simples, que é a questão de exibição das informações na tela
+        - É baseado em Components
+        - É usado para criar SPAs
+
+    - React é feito com JavaScript
+
+    - React é eficiente(Virtual DOM)
+
+    - O React pode ser utilizados para criar APPS mobile com o React Native
+
+    - React é a biblioteca de criação de interfaces mais popular e é utilizado em grandes empresas:
+        - Facebook
+        - Instagram
+        - WhatsApp
+        - Netflix
+        - Dropbox
+
+    - O que são Components e porque eles são importantes?
+        - O React é uma biblioteca baseada no conceito de Components
+        - Os Components permitem dividir a interface do Usuário em partes 
+        independentes e reutilizáveis
+        - Components são como funções JavaScript, onde:
+            - Aceitam entradas arbitrárias (chamadas **props**)
+            - Retorna Elementos React e esse elemento posteriormente
+            vai ser injetado na tela
+
+        - Existem 2 tipos de Components:
+            - Função
+                - Mais utilizado
+            - Classe(features extras)
+
+
+            Exemplo:
+                function Welcome(props) {
+                    return <h1>Hello, {props.name}</h1>;
+                }
