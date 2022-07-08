@@ -45,3 +45,83 @@
                 function Welcome(props) {
                     return <h1>Hello, {props.name}</h1>;
                 }
+
+    - O que é JSX?
+        - Um exemplo de código JSX:
+            const element = <h1 className="title"> Hello World! </h1>
+
+        - Não é apenas HTML nem JS
+        JSX serve para descrever como a nossa User Interface(UI) deve ser
+        - JSX não é interpretada pelo browser, por este motivo devemos 
+        utilizar um transpiler(em geral, o babel) para realizar essa 
+        transpilação
+        - Ao constrário do passado, em vez de compilar JavaScript em HTML, 
+        o JSX nos permite colocar HTML em JavaScript
+
+        - O código que vimos antes após o trasnpiler se tornará: 
+            const element = React.createElement(
+                "h1",
+                { className: "title" },
+                "HelloWorld!"
+            )
+        - Com esse código preparamos nosso elemento para ser exibido 
+        no DOM
+
+    - Vantagens do JSX
+        - Similaridade com o HTML
+        - Melhor integração entre o HTML e o JavaScript
+
+    - Quem utilizar o JSX??
+        - Preact
+        - Inferno -> framework JavaScript
+        - React Native
+        - Vuejs(Opcional)
+
+- O react tem duas maneiras de ser usado
+    - como um SPA(Single Page Application) ou seja, toda a interface de usuário
+    - Ou também so adicionando ele há a algumas partes do seu projeto
+
+- Como o react atualizar as views
+    - DOM(Document Object Model)
+        - É um objeto /interface criado pelo Browser que representa a estrutura do nosso 
+        documento HTML e que nos dá meios para interagir com ele(usamos em geral 
+        o Javascript para fazer isso).
+
+        - Exemplo:
+        var myBtn = document.getElementById('btn');
+
+        myBtn.addEventListener('click', function(event) {
+            alert('botão pressionado!')
+        }, false);
+
+    - Virtual DOM
+        É uma representação em Javascript do DOM verdadeiro. Quando alterações e eventos acontecem, 
+        primeiro o React atualiza o Virtual DOM, analisa as mudanças e o que precisa ser atualizado
+        no DOM, e depois realiza isso conciliando o Virtual DOM e o DOM
+
+    - Porque o React usa o Virtual DOM?
+        - Acessar o DOM é mais lento que as operações em JavaScript
+        - O Virtual DOM automaticamente encontra a maneira mais economica de atualizar 
+        o DOM(atualizando só os demais elementos necessários)
+
+    - Entendendo os elementos:
+        - Os menores blocos do React são os elementos, através deles é que descrevemos 
+        o que vai aparecer na nossa tela
+
+            const element = <h1>Hello, world</h1>;
+
+        - Diferente dos elementos do DOM, os elementos do React são objetos simples e 
+        "baratos" de criar
+
+        - O Virtual DOM é o responsável por atualizar o DOM e exibir esses elementos 
+        na tela
+        - Para renderizar um elemento, primeiro escolhemos um nó do DOM,
+        exemplo:
+
+            <div id="root"></div>
+
+        - Tudo dentro desse nó será atualizado pelo Virtual DOM
+
+        - Agora para inserirmos nosso elemento na tela, podemos rodar:
+            const element = <h1>Hello, world</h1>
+            ReactDOM.render(element, document.getElementById('root'));
