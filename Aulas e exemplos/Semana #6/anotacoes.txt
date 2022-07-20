@@ -170,3 +170,49 @@
                 }                
             }
         - o react tem mais ferramentas para este tipo de component
+
+
+- Agrupando components
+    npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+    We suggest that you begin by typing:
+
+    cd agrupando_components
+    npm start
+
+
+ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+
+ - Propriedades e funções puras
+    - Função pura:
+        function sum(a,b) {
+            return a + b;
+        }
+        - A função recebe duas propriedades a e b
+        - A função não altera o valor das entradas
+        - Sempre retorna o mesmo resultado para os mesmos tipos de entradas
+
+    - Função impura
+        function withdraw(account, amount) {
+            account.total -= amount;
+        }
+        - a função altera o valor de sua entrada
+
+    - Única regra restrita ao React
+        - Todos os components React tem que agir como funcões
+        puras em relação as suas props
+
+    
+
