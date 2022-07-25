@@ -214,5 +214,54 @@
         - Todos os components React tem que agir como funcões
         puras em relação as suas props
 
-    
+
+------------------------------------------------------------------------------
+
+- Criando component com props (exercicios)
+
+npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd criando_component_com_props
+  npm start
+
+-------------------------------------------------------------------------------   
+
+- Eventos
+
+    - como o próprio nome já diz, evento é uma ação disparada, quando
+    certa ocasião é efetuada, por exemplo onClick(), 
+    é um evento aonde pode disparar alguma ação quando ocorrer
+    um click em um button, por exemplo
+
+    - https://reactjs.org/docs/handling-events.html
+
+- Passando um evento como parâmetro para outro component
+
+    - com as props, nós vamos passando valores de um component maior 
+    para um menor, ou seja, afunilando as informações(fluxo normal)
+
+    - no caso, por exemplo do onClick, para que o mesmo nao dispare somente 
+    quando a tela for renderiza, podemos acionar a função, através de uma 
+    função anônima
+    - passando assim a funcão como uma propriedade
+
+- Renderização condicional
+    - realizar uma ação dependendo de uma condição
+    - essas ações podem ser aplicadas atraves de condições se 
+    baseando inteiramente no return, ou também, somente com 
+    base em uma propriedade
+
 
