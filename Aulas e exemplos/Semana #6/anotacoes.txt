@@ -340,3 +340,124 @@ We suggest that you begin by typing:
                 
             }
         }
+
+    - será necessário a criação de um constructor
+        pois é fundamental para as classes, ou seja, 
+        onde tudo(classe) será inicializado
+
+        constructor(props) {
+            super(props) -> passa as props para a classe que 
+            está sendo herdada
+        }
+
+    - Exemplo da criação de um state
+
+        this.state = {
+            planets: [
+                {
+                name: "planet name",
+                description: "description",
+                image_url:"url da imagem",
+                link:"link do planet"
+                },
+                {
+                name: "planet name",
+                description: "description",
+                image_url:"url da imagem",
+                link:"link do planet"
+                },
+            ]
+        }
+
+    - Para chamar as propriedades nos devidos lugares, ou seja, 
+    no local da chamada dos planetas
+
+        - pode ser feito através do "this.state.planets[0].name" -> passando 
+        posição 0, que seria o primeiro planet e seguido do name 
+        do planeta e assim por diante
+
+        - Pode ser feito também através do mapeamento, aonde iremos aplicar
+        um map da seguinte forma: 
+
+            { this.state.planets.map((planet) => 
+                <Planet
+                    name = { planet.name }
+                    description = { planet.description }
+                    image_url = { planet.image_url }
+                    link = { planet.link }
+                />
+            )}
+
+            - desta forma, estaremos passando as informações através do map, 
+            para o component Planet e assim, todas as infos serão acessadas
+            através do planet.(nome da propriedade), que anteriormente
+            era feito da seguinte forma: this.state.planets[i].(nome da
+            propriedade), deixando assim o código mais limpo
+
+        - para 'pegar' todas as propriedades => [...this.state.planets], 
+        utilizamos o spread ou os ... que é um operador lógico, 
+        onde extrai todas as propriedades de um determinado objeto
+
+        - método pop()
+            - método desenvolvido para eliminar o último elemento de um array por exemplo.
+
+    - Lifecycle
+        - Cada component React tem um ciclo de vida
+        - O Component você pode monitorá-los ou manipulá-los durante 3 fases:
+            - Mounting: Quando um elemento é colocado no DOM
+            - Updating: Quando um component é atualizado(Acontece sempre
+            que ocorre uma mudança no estado ou propriedade de um component)
+            - Unmounting: Quando um component é removido do DOM
+
+        State and lifecycle
+        - https://reactjs.org/docs/state-and-lifecycle.html
+        - https://www.w3schools.com/react/react_lifecycle.asp
+
+    - Hooks
+        - Os Hooks são uma forma de usarmos state, lifecycle e compartilharmos 
+        lógica em components funcionais
+        - Eles foram inseridos na versão 16.8
+
+        Exemplo de component com Hook de state
+
+            import React, { useState } from 'react';
+
+            function Example() {
+                const [count, setCount] = useState(0);
+
+                return(
+                    <div>
+                        <p>You clicked {count} times</p>
+                        <button onClick={() => setCount(count + 1)}>
+                            Click me!
+                        </button>
+                    </div>
+                )
+            } 
+
+        Exemplo de component com Hook associado a lifecycle
+
+        import React, { useState, useEffect } from 'react';
+
+        function Example() {
+            const [count, setCount] = useState(0);
+
+            //Similar to componentDidMount and componentDidUpdate:
+            useEffect(() => {
+                //Update the document title using the browser API
+                document.title = `You clicked ${count} times`;
+            });
+
+            return (
+                <div>
+                    <p>You clicked {count} times</p>
+                    <button onClick={() => setCount(count + 1)}>
+                        Click me!
+                    </button>
+                </div>
+            )
+        }
+
+    - Porque usar os Hooks?
+        - Os components de função são mais fáceis de compreender
+        - Hooks nos ajudam a compartilhar lógica entre components
