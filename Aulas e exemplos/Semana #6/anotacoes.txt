@@ -265,3 +265,78 @@ We suggest that you begin by typing:
     base em uma propriedade
 
 
+- Impedindo o component de renderizar até que uma condição seja atingida
+    - simplesmente colocamos uma verificação a ser comtemplada antes mesmo de 
+    efetuar a Renderização
+
+- Renderizando multiplos components
+    - muitas vezes será necessário renderizar multiplos components baseado em arrays
+    - esse processo pode ser efetuado através de um mapeamento do elemento que criamos, 
+    em vez de chamarmos a todo o momento o component que criamos
+
+- Renderizando multiplos elementos no JSX
+
+- O que são estados?
+    - State é um objeto JavaScript que guarda os dados de um component e determina
+    seu comportamento
+    - Quando um estado é atualizado o component é re-renderizado
+
+    - Diferença entre props e states
+        - Props: são passadas para outros components, ou seja, component pai passa informações
+        para o component filho
+        - State: Ele pertence a cada component e também quando as props são atualizadas o 
+        component vai renderizar novamente e o estado quando atualizado, vai renderizar novamente
+        o component 
+
+    - Component de classe vs. component funcional
+        -  A pouco tempo atrás, somente os components de classe poderiam usar state e até 
+        por isso eram considerados mais importantes, para a parte mais complexa do react
+        - Recentemente houve a inserção dos hooks no react, os hooks permitem que os 
+        states sejam alterados, desta forma, em component funcional também 
+        é possível usar state
+
+        - Declarando um estado em um component de classe
+
+            constructor(props) {
+                super(props);
+                //state general (object JS)
+                this.state = {
+                    count: 0
+                }
+            }
+
+        - Para manipular um component em um component de classe
+            
+            incrementCount() {
+                this.setState((state) => {
+                    //forma classica de manipular states in classes
+                    return {count: state.count + 1}
+                });
+            }
+
+        - Para declarar um estado em um component funcional
+
+            import React, { useState } from 'react';
+
+            ...
+            // passado nome do estado, metodo para alterar o state
+            // passa o use State com o valor de inicialização 
+            const [count, setCount] = useState(0);
+            ... 
+
+        - Para manipular um component em um component de classe
+
+            // em vez de usar o setState, podem usar o setCount
+            setCount(count + 1)
+
+
+
+- Criando uma classe com estado
+    - para criar determinada classe é preciso deixar no seguinte formato:
+
+        class Planets extends React.Component {
+            render() {
+                return....
+                
+            }
+        }
