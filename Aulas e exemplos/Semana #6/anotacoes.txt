@@ -461,3 +461,68 @@ We suggest that you begin by typing:
     - Porque usar os Hooks?
         - Os components de função são mais fáceis de compreender
         - Hooks nos ajudam a compartilhar lógica entre components
+
+    - Refatorando nosso lifecycle com Hooks
+        - nesta parte iniciaremos com o uso do useEffect, aonde 
+        inicialmente é preciso importar ele
+        - o useEffect é um método que roda tanto no  
+        componentDidMount, ou seja, quando o component é 
+        preparado para aparecer na tela e com o componentDidUpdate, 
+        que é rodado sempre que um estado é atualizado
+
+        - quando é para executar/rodar o useEffect apenas uma vez, 
+        ou seja, quando é montado, pode passar um array vazio como parâmetro 
+        para o useEffect, caso contrario, se quiser que seja atualizado, 
+        sempre que um estado for atualizado, basta passar o mesmo como 
+        parâmetro
+
+    - Controlled e Uncontrolled Components
+        - Uncontrolled component: em geral é um component que tem seus dados 
+        gerenciados pelo próprio DOM (como um input normal) sem relação
+        com o state do component
+
+        exemplo:
+        
+        import React from 'react'
+
+        const Form = () => {
+            return (
+                <div>
+                    <label htmlFor="name">Name: </label>
+                    <input type="text" id="name" />
+                </div>
+            )
+        }
+
+        export default Form;
+
+        - Controlled Component: components controlados estão associados
+        aos estados do component, ou seja, eles exibem informações
+        baseadas no state e quando alterados alteram também o state.
+
+        exemplo: 
+
+        import React, { useState } from 'react'
+
+        const Form = () => {
+            const [name, setName] = useState('');
+            const handleChange = (e) => setName(e.currentTarget.value)
+
+            return (
+                <div>
+                    <label htmlFor="name">Name: </label>
+                    <input type="text" id="name" value={name} onChange(handleChange) />
+                </div>
+            )
+        }
+
+        export default Form;
+
+        -> Maneira mais indicada de criar forms é através dos Controlled
+        Components
+        -> Esta maneira ajuda bastante, porque depois você simplesmente pode 
+        enviar o valor do seu state como o valor do 'form', não precisando
+        capturar de uma forma diferente depois 
+
+
+        
