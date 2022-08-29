@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import GrayImage from "../../shared/gray_image";
 import DescriptionWithLink from "../../shared/description_with_link";
+import Form from "./form"
 
 
 async function getSatellites(id) {
@@ -20,6 +21,10 @@ const Planet = (props) => {
     })
   }, [])
 
+  const addSatellite = (new_satellite) => {
+    setSatellites([...satellites, new_satellite])
+  }
+
   let title;
   if (props.title_with_underline) {
     title = (
@@ -38,6 +43,9 @@ const Planet = (props) => {
       <DescriptionWithLink description={props.description} link={props.link} />
       <GrayImage image_url={props.image_url} gray={props.gray} />
       <h4>Satélites</h4>
+      <hr />
+      <Form addSatellite={addSatellite} />
+      <hr />
       <ul>
         {satellites.map((satellite, index) => 
           <li key={ index }>
