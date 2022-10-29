@@ -526,3 +526,8 @@ We suggest that you begin by typing:
 
 
         
+
+=> Navegação programática
+    - quando você quer mudar de uma page pra outra, mas não quer que seja através de um click de um user, vamos dizer que você chame uma determinada API
+    e de um erro, sendo assim, você deseja que seja redirecionado para uma outra page, ou tambem, depois de um determinado tempo num contador, 
+    seja redirecionado para uma page, sem que ele mesmo click em nada.

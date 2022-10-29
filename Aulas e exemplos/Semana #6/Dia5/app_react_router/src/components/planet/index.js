@@ -4,7 +4,8 @@ import DescriptionWithLink from "../shared/description_with_link";
 import Form from "./form"
 
 // o useParams é um hook
-import { useParams } from 'react-router-dom'
+// useHistory é um hook que ajuda a fazer uma navegação programatica
+import { useParams, useNavigate } from 'react-router-dom';
 
 async function getPlanet(id) {
   let response = await fetch(`http://localhost:3000/api/${id}.json`)
@@ -22,6 +23,7 @@ const Planet = () => {
   // quando faz a chamada assim através dos {} e 
   // tem um object dentro, somente essa info será retornada
   let { id } = useParams();
+  let history = useNavigate();
 
   useEffect(() => {
     getPlanet(id).then(data => {
@@ -29,6 +31,10 @@ const Planet = () => {
       setPlanet(data['data'])
     })
   }, [])
+
+  const goToPlanets = () => {
+    history('/');
+  }
 
   const addSatellite = (new_satellite) => {
     setSatellites([...satellites, new_satellite])
@@ -63,6 +69,8 @@ const Planet = () => {
         )}
       </ul>
       <hr/>
+      {/* <Link to='/'>Voltar ao menu de listagem!</Link> */}
+      <button type="button" onClick={goToPlanets}>Voltar ao menu de listagem!</button>
     </div>
   )
 }
